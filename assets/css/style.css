@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 .sidenav {
     height: 100%;
     width: 200px;
@@ -5,7 +7,7 @@
     z-index: 1;
     top: 0;
     left: 0;
-    background-color: pink;
+    background-color: white;
     overflow-x: hidden;
     padding-top: 20px;
   }
@@ -24,7 +26,7 @@
   
   .main {
     margin-left: 200px; /* Same as the width of the sidenav */
-    font-size: 28px; /* Increased text to enable scrolling */
+    /* font-size: 28px; Increased text to enable scrolling */
     padding: 0px 10px;
   }
   
@@ -45,3 +47,6 @@
     margin-left: 30px;
   }
   
+  .vr_text {
+    font-family: 'Nunito', sans-serif;
+  }
