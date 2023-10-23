@@ -47,6 +47,10 @@
     margin-left: 30px;
   }
   
-  .vr_text {
+  .nunito-font {
     font-family: 'Nunito', sans-serif;
+  }
+
+  .roboto-font {
+    font-family: 'Roboto', sans-serif;
   }
