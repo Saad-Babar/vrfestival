@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VR Arles Festival</title>
+    <!-- Tailwind  -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Bootstrap  -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="assets/images/cropped-favicon-32x32.jpg" type="image/x-icon">
+    <!-- Font Awesome  -->
+    <script src="https://kit.fontawesome.com/22b137e1dc.js" crossorigin="anonymous"></script>
+    <!-- Custom Css  -->
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+
+    <div class="sidenav">
+        <div class="container">
+            <!-- Left Bar Logo Start  -->
+            <svg id="logo" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                viewBox="0 0 120 90">
+                <defs>
+                    <clipPath id="logo-mask-line3">
+                        <rect y="63" width="120" height="27" style="fill: none" />
+                    </clipPath>
+                    <clipPath id="logo-mask-line2">
+                        <rect y="32" width="120" height="26" style="fill: none" />
+                    </clipPath>
+                    <clipPath id="logo-mask-line1">
+                        <rect width="120" height="26" style="fill: none" />
+                    </clipPath>
+                </defs>
+                <g id="logo-line3" style="clip-path: url(#logo-mask-line3)">
+                    <path
+                        d="M95.21,64.59a.68.68,0,0,1,.68-.54h2.16a.68.68,0,0,1,.68.54l6.83,23.76a.67.67,0,0,1-.68.86h-1a.65.65,0,0,1-.68-.54L97.23,67.47c0-.14-.11-.22-.22-.22h-.07q-.16,0-.22.22l-6,21.21a.65.65,0,0,1-.68.54H89a.64.64,0,0,1-.68-.83Z" />
+                    <path
+                        d="M2.73,77.79V88.43a.72.72,0,0,1-.72.72H1.15a.72.72,0,0,1-.72-.72V64.71A.72.72,0,0,1,1.15,64H12.4a.72.72,0,0,1,.72.72v.86a.72.72,0,0,1-.72.72H3.09a.34.34,0,0,0-.36.36v8.12a.34.34,0,0,0,.36.36H12a.72.72,0,0,1,.72.72v.86a.72.72,0,0,1-.72.72H3.09a.34.34,0,0,0-.36.36" />
+                    <path
+                        d="M18.84,86.49a.34.34,0,0,0,.36.36h9.38a.72.72,0,0,1,.72.72v.86a.72.72,0,0,1-.72.72H17.26a.72.72,0,0,1-.72-.72V64.71a.72.72,0,0,1,.72-.72H28.51a.72.72,0,0,1,.72.72v.86a.72.72,0,0,1-.72.72H19.2a.34.34,0,0,0-.36.36v8.16a.34.34,0,0,0,.36.36h8.91a.72.72,0,0,1,.72.72v.83a.72.72,0,0,1-.72.72H19.2a.34.34,0,0,0-.36.36Z" />
+                    <path
+                        d="M39.07,76.64c-2.62-.61-6-2-6-6.18s3.34-6.76,7-6.76a6.68,6.68,0,0,1,7,6.76v.47a.72.72,0,0,1-.72.72h-.86a.72.72,0,0,1-.72-.72v-.47A4.45,4.45,0,0,0,40.08,66a4.37,4.37,0,0,0-4.71,4.46c0,3.24,3.38,3.56,5.86,4.31C45.11,76,47.81,77.54,47.81,82c0,4.71-3.67,7.48-7.73,7.48A7.4,7.4,0,0,1,32.35,82v-.58a.72.72,0,0,1,.72-.72H34a.72.72,0,0,1,.72.72V82a5.13,5.13,0,0,0,5.39,5.18c3.27,0,5.39-2.12,5.39-5.18,0-3.27-2.3-4.35-6.4-5.32" />
+                    <path
+                        d="M57.87,66.65V88.43a.72.72,0,0,1-.72.72h-.9a.72.72,0,0,1-.72-.72V66.65a.34.34,0,0,0-.36-.36H49.86a.72.72,0,0,1-.72-.72v-.86a.72.72,0,0,1,.72-.72H63.52a.72.72,0,0,1,.72.72v.86a.72.72,0,0,1-.72.72H58.23a.34.34,0,0,0-.36.36" />
+                    <rect x="66.64" y="63.99" width="2.3" height="25.16" rx="0.72" ry="0.72" />
+                    <path
+                        d="M82.27,88.61a.68.68,0,0,1-.68.54H79.43a.68.68,0,0,1-.68-.54L71.92,64.85A.67.67,0,0,1,72.6,64h1a.65.65,0,0,1,.68.54l5.93,21.21q.05.22.22.22h.07q.16,0,.22-.22l6-21.21a.65.65,0,0,1,.68-.54h1a.64.64,0,0,1,.68.83Z" />
+                    <path
+                        d="M110.11,86.49a.34.34,0,0,0,.36.36h8.81a.72.72,0,0,1,.72.72v.86a.72.72,0,0,1-.72.72H108.53a.72.72,0,0,1-.72-.72V64.71a.72.72,0,0,1,.72-.72h.86a.72.72,0,0,1,.72.72Z" />
+                </g>
+                <g id="logo-line2" style="clip-path: url(#logo-mask-line2)">
+                    <path
+                        d="M6.89,32.78a.68.68,0,0,1,.68-.54H9.73a.68.68,0,0,1,.68.54l6.83,23.76a.67.67,0,0,1-.68.86h-1a.65.65,0,0,1-.68-.54L8.9,35.66c0-.14-.11-.22-.22-.22H8.62c-.11,0-.18.07-.22.22l-6,21.21a.65.65,0,0,1-.68.54h-1A.64.64,0,0,1,0,56.58Z" />
+                    <path
+                        d="M22.24,34.58a.34.34,0,0,0-.36.36v9.78a.34.34,0,0,0,.36.36h4.17a5.25,5.25,0,0,0,0-10.5Zm0,12.8a.34.34,0,0,0-.36.36v9a.72.72,0,0,1-.72.72H20.3a.72.72,0,0,1-.72-.72V33a.72.72,0,0,1,.72-.72h6.11A7.55,7.55,0,0,1,34,39.82c0,3.24-1.69,5.21-4.28,6.83a.75.75,0,0,0-.25,1.15L34,56.36a.69.69,0,0,1-.68,1.08h-.79a1.06,1.06,0,0,1-1-.72l-4.6-8.91a.7.7,0,0,0-.68-.43Z" />
+                    <path
+                        d="M40.18,54.78a.34.34,0,0,0,.36.36h8.81a.72.72,0,0,1,.72.72v.86a.72.72,0,0,1-.72.72H38.59a.72.72,0,0,1-.72-.72V33a.72.72,0,0,1,.72-.72h.86a.72.72,0,0,1,.72.72Z" />
+                    <path
+                        d="M55.42,54.78a.34.34,0,0,0,.36.36h9.38a.72.72,0,0,1,.72.72v.86a.72.72,0,0,1-.72.72H53.83a.72.72,0,0,1-.72-.72V33a.72.72,0,0,1,.72-.72H65.09a.72.72,0,0,1,.72.72v.86a.72.72,0,0,1-.72.72H55.78a.34.34,0,0,0-.36.36v8.16a.34.34,0,0,0,.36.36h8.91a.72.72,0,0,1,.72.72V45a.72.72,0,0,1-.72.72H55.78a.34.34,0,0,0-.36.36Z" />
+                    <path
+                        d="M75.65,44.93c-2.62-.61-6-2-6-6.18S73,32,76.66,32a6.68,6.68,0,0,1,7,6.76v.47a.72.72,0,0,1-.72.72h-.86a.72.72,0,0,1-.72-.72v-.47a4.45,4.45,0,0,0-4.71-4.46A4.37,4.37,0,0,0,72,38.75c0,3.23,3.38,3.56,5.86,4.31,3.88,1.19,6.58,2.77,6.58,7.19,0,4.71-3.67,7.48-7.73,7.48a7.4,7.4,0,0,1-7.73-7.48v-.58a.72.72,0,0,1,.72-.72h.9a.72.72,0,0,1,.72.72v.58a5.13,5.13,0,0,0,5.39,5.18c3.27,0,5.39-2.12,5.39-5.18,0-3.27-2.3-4.35-6.4-5.32" />
+                </g>
+                <g id="logo-line1" style="clip-path: url(#logo-mask-line1)">
+                    <path
+                        d="M10.5,25.18a.68.68,0,0,1-.68.54H7.66A.68.68,0,0,1,7,25.18L.15,1.42A.67.67,0,0,1,.83.56h1a.65.65,0,0,1,.68.54L8.49,22.31q.05.22.22.22h.07c.11,0,.18-.07.22-.22L15,1.1a.65.65,0,0,1,.68-.54h1a.64.64,0,0,1,.68.83Z" />
+                    <path
+                        d="M22.58,2.86a.34.34,0,0,0-.36.36V13a.34.34,0,0,0,.36.36h4.17a5.25,5.25,0,1,0,0-10.5Zm0,12.8a.34.34,0,0,0-.36.36v9a.72.72,0,0,1-.72.72h-.86a.72.72,0,0,1-.72-.72V1.28a.72.72,0,0,1,.72-.72h6.11A7.55,7.55,0,0,1,34.3,8.11c0,3.23-1.69,5.21-4.28,6.83a.75.75,0,0,0-.25,1.15l4.53,8.55a.69.69,0,0,1-.68,1.08h-.79a1.06,1.06,0,0,1-1-.72l-4.6-8.91a.7.7,0,0,0-.68-.43Z" />
+                </g>
+            </svg>
+            <!-- left bar logo end  -->
+            <div class="facebookdiv">
+                <i class="fa-brands fa-facebook-f"></i>
+            </div>
+            <div class="twitterdiv w-[32px] h-[32px] rounded-sm bg-black text-center content-center max-w-full">
+                <i class="fa-brands fa-twitter fa-xl" style="color: white;"></i>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="main">
+            <h2>Sidebar</h2>
+            <p>This sidebar is of full height (100%) and always shown.</p>
+            <p>Scroll down the page to see the result.</p>
+            <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset
+                concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur
+                eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.
+            </p>
+            <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset
+                concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur
+                eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.
+            </p>
+            <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset
+                concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur
+                eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.
+            </p>
+            <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset
+                concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur
+                eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.
+            </p>
+        </div>
+    </div>
+
+
+
+    <!-- Bootstrap  -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <!-- Custom Javascript  -->
+    <script src="assets/js/script.js"></script>
+
+</body>
+
+</html>
