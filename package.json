@@ -1,5 +1,11 @@
 {
+  "scripts": {
+    "watch": "npx tailwindcss -i ./src/input.css -o ./dist/output.css --watch"
+  },
   "devDependencies": {
     "tailwindcss": "^3.3.3"
+  },
+  "dependencies": {
+    "caniuse-lite": "^1.0.30001554"
   }
 }
