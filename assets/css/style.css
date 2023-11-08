@@ -697,6 +697,10 @@ video {
   margin-top: 50px;
 }
 
+.ml-\[300px\]{
+  margin-left: 300px;
+}
+
 .block{
   display: block;
 }
@@ -1524,8 +1528,48 @@ body {
     margin-right: 10px;
   }
 
+  .maxcomd\:ml-\[0\]{
+    margin-left: 0;
+  }
+
+  .maxcomd\:ml-\[0px\]{
+    margin-left: 0px;
+  }
+
+  .maxcomd\:mt-\[20px\]{
+    margin-top: 20px;
+  }
+
+  .maxcomd\:mt-\[0px\]{
+    margin-top: 0px;
+  }
+
+  .maxcomd\:mt-\[30px\]{
+    margin-top: 30px;
+  }
+
+  .maxcomd\:ml-\[20\]{
+    margin-left: 20;
+  }
+
+  .maxcomd\:ml-\[20px\]{
+    margin-left: 20px;
+  }
+
+  .maxcomd\:ml-\[10px\]{
+    margin-left: 10px;
+  }
+
+  .maxcomd\:block{
+    display: block;
+  }
+
   .maxcomd\:hidden{
     display: none;
+  }
+
+  .maxcomd\:h-\[200px\]{
+    height: 200px;
   }
 
   .maxcomd\:w-\[100px\]{
@@ -1540,9 +1584,31 @@ body {
     width: 80px;
   }
 
+  .maxcomd\:w-\[300px\]{
+    width: 300px;
+  }
+
+  .maxcomd\:w-\[100\%\]{
+    width: 100%;
+  }
+
+  .maxcomd\:w-\[80\%\]{
+    width: 80%;
+  }
+
+  .maxcomd\:break-after-auto{
+    -moz-column-break-after: auto;
+         break-after: auto;
+  }
+
   .maxcomd\:break-after-all{
     -moz-column-break-after: all;
          break-after: all;
+  }
+
+  .maxcomd\:break-after-right{
+    -moz-column-break-after: right;
+         break-after: right;
   }
 
   .maxcomd\:break-all{
@@ -1562,6 +1628,59 @@ body {
   .maxcomd\:ps-\[50px\]{
     -webkit-padding-start: 50px;
             padding-inline-start: 50px;
+  }
+
+  .maxcomd\:ps-\[155px\]{
+    -webkit-padding-start: 155px;
+            padding-inline-start: 155px;
+  }
+
+  .maxcomd\:pl-\[155px\]{
+    padding-left: 155px;
+  }
+
+  .maxcomd\:pl-\[150px\]{
+    padding-left: 150px;
+  }
+
+  .maxcomd\:pl-\[140px\]{
+    padding-left: 140px;
+  }
+
+  .maxcomd\:pt-\[\]{
+    padding-top: ;
+  }
+
+  .maxcomd\:pt-\[10px\]{
+    padding-top: 10px;
+  }
+
+  .maxcomd\:pt-\[30px\]{
+    padding-top: 30px;
+  }
+
+  .maxcomd\:pb-\[\]{
+    padding-bottom: ;
+  }
+
+  .maxcomd\:pb-\[40px\]{
+    padding-bottom: 40px;
+  }
+
+  .maxcomd\:pt-\[50px\]{
+    padding-top: 50px;
+  }
+
+  .maxcomd\:pl-\[10px\]{
+    padding-left: 10px;
+  }
+
+  .maxcomd\:pl-\[31px\]{
+    padding-left: 31px;
+  }
+
+  .maxcomd\:text-center{
+    text-align: center;
   }
 
   .maxcomd\:text-\[10px\]{
