@@ -9,6 +9,9 @@
 @tailwind components;
 @tailwind utilities;
 
+/* * {
+  border: 1px solid red !important;
+} */
 body {
   overflow-x: hidden !important;
 }
@@ -16,14 +19,12 @@ body {
     height: 100%;
     width: 15%;
     position: fixed;
-    /* z-index: 1; */
     top: 0;
     left: 0;
     background-color: white;
     overflow-x: hidden;
     padding-top: 20px;
   }
-
   .sidenav a {
     padding: 6px 8px 6px 16px;
     text-decoration: none;
@@ -31,64 +32,48 @@ body {
     color: #818181;
     display: block;
   }
-  
   .sidenav a:hover {
     color: #f1f1f1;
   }
-
   .hidden {
     display: none;
 }
-  
   .main {
     width: 85%;
     margin-left: 15%;
-    /* margin-left: 200px; Same as the width of the sidenav */
-    /* font-size: 28px; Increased text to enable scrolling */
     padding: 0px 0px;
     z-index: 1;
-  }
-  
+  }  
   @media screen and (max-height: 450px) {
     .sidenav {padding-top: 15px;}
     .sidenav a {font-size: 18px;}
   }
-
   @media screen and (max-width: 425px) {
     .sidenav {display: none;}
-    .main {margin-left: 0px;}
+    .main {
+      margin-left: 0px;
+      width: 100%;
+    }
   }
-
-  #logo {
+  /* #logo {
     width: 120px;
     height: 90px;
     margin-top: 35px;
     margin-left: 30px;
-  }
-  
+  } */
   .nunito-font {
     font-family: 'Nunito', sans-serif;
   }
-
   .roboto-font {
     font-family: 'Roboto', sans-serif;
   }
-
   .persu-font {
     font-family: myFont;
   }
-
-  #shrinkable {
-    margin-left: 150px;
-    /* margin-right: -150px; */
-    z-index: 9999 !important;
-  }
-
   .khasha:hover {
     color: #A3D5BD;
     transition: 700ms !important;
   }
-
   #myBtn {
     position: static; 
     margin-bottom: -300px !important;
@@ -98,38 +83,30 @@ body {
     z-index: 99;
     border: none;
     outline: none;
-    background-color: white;
-    color: black;
     cursor: pointer;
     width: 120px;
     height: 120px;
   }
-
-  /* .fttps {
-    float: right;
-    padding-right: 1px;
-    padding-left: 1px;
-  } */
-
-
-
+  @keyframes slideRight {
+    0% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
   #shrinkable {
     background-color: black;
     width: 80px;
     height: 446px;
     margin-top: 59px;
-    position: fixed; /* Change to 'fixed' to keep it fixed on the viewport */
-    transition: height 0.5s; /* Using 'transition' for smooth height changes */
-    left: -1.75px;
-    z-index: 999; /* Set a higher z-index to make it appear on top */
+    position: fixed;
+    transition: height 0.5s;
+    z-index: 10000 !important;
+    margin-left: 150px;
+    animation: slideRight 1s ease;
   }
-  
-
-
-
   /* slider last continuous  */
-
-  
   @-webkit-keyframes scroll {
     0% {
       transform: translateX(0);
@@ -138,7 +115,6 @@ body {
       transform: translateX(calc(-250px * 7));
     }
   }
-  
   @keyframes scroll {
     0% {
       transform: translateX(0);
@@ -149,18 +125,15 @@ body {
   }
   .slider {
     background: #abdbc4;
-    /* box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.125); */
     height: 400px;
     margin: auto;
     overflow: hidden;
     position: relative;
-    /* width: 960px; */
     display: flex;
     justify-content: center;
     align-items: center;
   }
   .slider::before, .slider::after {
-    /* background: linear-gradient(to right, white 0%, rgba(255, 255, 255, 0) 100%); */
     content: "";
     height: 100px;
     position: absolute;
@@ -183,7 +156,6 @@ body {
     width: calc(250px * 14);
   }
   .slider .slide {
-    /* height: 100px; */
     width: 1000px;
     text-align: center;
   }
