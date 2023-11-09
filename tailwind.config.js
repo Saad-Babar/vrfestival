@@ -20,10 +20,10 @@ module.exports = {
         // maxcosm: { max: '424.5px' },
         md: { max: '768px' },
         maxcomd: { max: '425px' },
-        // maxmd: { max: '767.5px' },
+        maxmd: { max: '375px' },
+        maxxl: { max: '320px' },
         // maxcolg: { max: '849.5px' },
         // maxlg: { max: '991.5px' },
-        // maxxl: { max: '1199.5px' },
         // min and max width breakpoints
         // 'md-to-lg': { min: '768px', max: '992px' },
         // 'lg-to-xl': { min: '992px', max: '1199px' },

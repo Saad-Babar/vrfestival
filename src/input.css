@@ -159,3 +159,28 @@ body {
     width: 1000px;
     text-align: center;
   }
+
+  #dropdon {
+    display: none;
+  }
+
+
+  /* Add your existing styles here */
+
+/* Add your existing styles here */
+
+@keyframes moveLetters {
+  0% {
+      transform: translateY(0);
+  }
+  50% {
+      transform: translateY(-10px);
+  }
+  100% {
+      transform: translateY(0);
+  }
+}
+
+.animated-letter {
+  animation: moveLetters 1s ease infinite;
+}

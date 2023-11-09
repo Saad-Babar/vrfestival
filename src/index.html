@@ -82,7 +82,8 @@
             </svg>
             <!-- left bar logo end  -->
             <!-- navigation collapsable start -->
-            <div id="shrinkable" style="display: none;" class="left-[-1.75px] max:left-[200px] max:block 2xl:left-[20px] coxl:left-[10px] xl:left-[-40px] md:left-[-70px]">
+            <div id="shrinkable" style="display: none; z-index: 10000;"
+                class="left-[-1.75px] max:left-[200px] max:block 2xl:left-[20px] coxl:left-[10px] xl:left-[-40px] md:left-[-70px]">
                 <i class="fa-solid fa-bars fa-2xl ml-6 mt-10 text-wite hover:text-gren duration-500 cursor-pointer"
                     onclick="openmenu()" id="bars"></i>
                 <i class="fa-solid fa-xmark fa-2xl ml-6 mt-10 text-wite hover:text-gren duration-500 cursor-pointer"
@@ -115,14 +116,12 @@
                 </div>
             </div>
             <!-- navigation collapsable end -->
-            <div
-                class="facebookdiv ms-[84px] mt-[340px] mb-4 w-[32px] h-[32px] md:mt-[270px] md:ms-[10px] rounded-sm cursor-pointer bg-blck hover:bg-gren duration-500 text-center content-center max-w-full max:mt-[1500px] max:ms-[160px] xl:ms-[50px]" data-aos="zoom-in"
-                data-aos-duration="500" data-aos-easing="ease-in-out">
+            <div class="facebookdiv ms-[84px] mt-[340px] mb-4 w-[32px] h-[32px] md:mt-[270px] md:ms-[10px] rounded-sm cursor-pointer bg-blck hover:bg-gren duration-500 text-center content-center max-w-full max:mt-[1500px] max:ms-[160px] xl:ms-[50px]"
+                data-aos="zoom-in" data-aos-duration="500" data-aos-easing="ease-in-out">
                 <i class="fa-brands fa-facebook-f fa-xl mt-3" style="color: white;"></i>
             </div>
-            <div
-                class="twitterdiv ms-[84px] w-[32px] h-[32px] md:ms-[10px] rounded-sm bg-blck hover:bg-gren duration-500 cursor-pointer text-center content-center max-w-full max:ms-[160px] xl:ms-[50px]" data-aos="zoom-in"
-                data-aos-duration="500" data-aos-easing="ease-in-out" data-aos-offset="0">
+            <div class="twitterdiv ms-[84px] w-[32px] h-[32px] md:ms-[10px] rounded-sm bg-blck hover:bg-gren duration-500 cursor-pointer text-center content-center max-w-full max:ms-[160px] xl:ms-[50px]"
+                data-aos="zoom-in" data-aos-duration="500" data-aos-easing="ease-in-out" data-aos-offset="0">
                 <i class="fa-brands fa-twitter fa-xl mt-3" style="color: white;"></i>
             </div>
         </div>
@@ -130,9 +129,115 @@
 
     <!-- right side content  -->
     <section class="main">
+        <!-- mobile menu start -->
         <div class="hidden maxcomd:block">
-            <h2>Hlio bOIS</h2>
+
+
+            <nav class="bg-wite">
+                <div class="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
+                    <div class="relative flex h-[120px] items-center ">
+                        <div class="w-[80px] h-[80px] bg-blck flex items-center ps-[25px]">
+                            <i class="fa-solid fa-bars fa-2xl cursor-pointer" onclick="mobshow()" style="color: #ffffff;"></i>
+                            <div class="container" id="dropdon">
+                                <div class="relative bg-blck w-[300px] mt-[220px] pl-[20px] pb-[10px] z-50 maxmd:w-[250px] maxmd:mt-[310px]">
+                                    <h2
+                                        class="text-wite hover:text-gren duration-500 cursor-pointer font-bold roboto-font text-[26px] leading-[50px] block mr-[20px]">
+                                        Le
+                                        festival</h2>
+                                    <h2
+                                        class="text-wite hover:text-gren duration-500 cursor-pointer font-bold roboto-font text-[26px] leading-[50px] block mr-[20px]">
+                                        La
+                                        sélection</h2>
+                                    <h2
+                                        class="text-wite hover:text-gren duration-500 cursor-pointer font-bold roboto-font text-[26px] leading-[50px] block mr-[20px]">
+                                        Au
+                                        programme</h2>
+                                    <h2
+                                        class="text-wite hover:text-gren duration-500 cursor-pointer font-bold roboto-font text-[26px] leading-[50px] block mr-[20px]">
+                                        Résidence</h2>
+                                    <h2 class="text-wite hover:text-gren duration-500 cursor-pointer font-bold roboto-font text-[26px] leading-[50px] block mr-[20px]"
+                                        style="border-bottom: 1px solid white;">Rencontres du virtuel</h2>
+                                    <span
+                                        class="text-wite hover:text-gren duration-500 cursor-pointer font-bold roboto-font text-[20px] leading-[40px] mr-[20px] inline-block">Actualités</span>
+                                    <span
+                                        class="text-wite hover:text-gren duration-500 cursor-pointer font-bold roboto-font text-[20px] leading-[40px] inline-block me-[20px]">Les
+                                        partenaires</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <svg id="logo" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                viewBox="0 0 120 90" class="md:w-[90px] ml-[10px]">
+                                <defs>
+                                    <clipPath id="logo-mask-line3">
+                                        <rect y="63" width="120" height="27" style="fill: none" />
+                                    </clipPath>
+                                    <clipPath id="logo-mask-line2">
+                                        <rect y="32" width="120" height="26" style="fill: none" />
+                                    </clipPath>
+                                    <clipPath id="logo-mask-line1">
+                                        <rect width="120" height="26" style="fill: none" />
+                                    </clipPath>
+                                </defs>
+                                <g id="logo-line3" style="clip-path: url(#logo-mask-line3)">
+                                    <path
+                                        d="M95.21,64.59a.68.68,0,0,1,.68-.54h2.16a.68.68,0,0,1,.68.54l6.83,23.76a.67.67,0,0,1-.68.86h-1a.65.65,0,0,1-.68-.54L97.23,67.47c0-.14-.11-.22-.22-.22h-.07q-.16,0-.22.22l-6,21.21a.65.65,0,0,1-.68.54H89a.64.64,0,0,1-.68-.83Z" />
+                                    <path
+                                        d="M2.73,77.79V88.43a.72.72,0,0,1-.72.72H1.15a.72.72,0,0,1-.72-.72V64.71A.72.72,0,0,1,1.15,64H12.4a.72.72,0,0,1,.72.72v.86a.72.72,0,0,1-.72.72H3.09a.34.34,0,0,0-.36.36v8.12a.34.34,0,0,0,.36.36H12a.72.72,0,0,1,.72.72v.86a.72.72,0,0,1-.72.72H3.09a.34.34,0,0,0-.36.36" />
+                                    <path
+                                        d="M18.84,86.49a.34.34,0,0,0,.36.36h9.38a.72.72,0,0,1,.72.72v.86a.72.72,0,0,1-.72.72H17.26a.72.72,0,0,1-.72-.72V64.71a.72.72,0,0,1,.72-.72H28.51a.72.72,0,0,1,.72.72v.86a.72.72,0,0,1-.72.72H19.2a.34.34,0,0,0-.36.36v8.16a.34.34,0,0,0,.36.36h8.91a.72.72,0,0,1,.72.72v.83a.72.72,0,0,1-.72.72H19.2a.34.34,0,0,0-.36.36Z" />
+                                    <path
+                                        d="M39.07,76.64c-2.62-.61-6-2-6-6.18s3.34-6.76,7-6.76a6.68,6.68,0,0,1,7,6.76v.47a.72.72,0,0,1-.72.72h-.86a.72.72,0,0,1-.72-.72v-.47A4.45,4.45,0,0,0,40.08,66a4.37,4.37,0,0,0-4.71,4.46c0,3.24,3.38,3.56,5.86,4.31C45.11,76,47.81,77.54,47.81,82c0,4.71-3.67,7.48-7.73,7.48A7.4,7.4,0,0,1,32.35,82v-.58a.72.72,0,0,1,.72-.72H34a.72.72,0,0,1,.72.72V82a5.13,5.13,0,0,0,5.39,5.18c3.27,0,5.39-2.12,5.39-5.18,0-3.27-2.3-4.35-6.4-5.32" />
+                                    <path
+                                        d="M57.87,66.65V88.43a.72.72,0,0,1-.72.72h-.9a.72.72,0,0,1-.72-.72V66.65a.34.34,0,0,0-.36-.36H49.86a.72.72,0,0,1-.72-.72v-.86a.72.72,0,0,1,.72-.72H63.52a.72.72,0,0,1,.72.72v.86a.72.72,0,0,1-.72.72H58.23a.34.34,0,0,0-.36.36" />
+                                    <rect x="66.64" y="63.99" width="2.3" height="25.16" rx="0.72" ry="0.72" />
+                                    <path
+                                        d="M82.27,88.61a.68.68,0,0,1-.68.54H79.43a.68.68,0,0,1-.68-.54L71.92,64.85A.67.67,0,0,1,72.6,64h1a.65.65,0,0,1,.68.54l5.93,21.21q.05.22.22.22h.07q.16,0,.22-.22l6-21.21a.65.65,0,0,1,.68-.54h1a.64.64,0,0,1,.68.83Z" />
+                                    <path
+                                        d="M110.11,86.49a.34.34,0,0,0,.36.36h8.81a.72.72,0,0,1,.72.72v.86a.72.72,0,0,1-.72.72H108.53a.72.72,0,0,1-.72-.72V64.71a.72.72,0,0,1,.72-.72h.86a.72.72,0,0,1,.72.72Z" />
+                                </g>
+                                <g id="logo-line2" style="clip-path: url(#logo-mask-line2)">
+                                    <path
+                                        d="M6.89,32.78a.68.68,0,0,1,.68-.54H9.73a.68.68,0,0,1,.68.54l6.83,23.76a.67.67,0,0,1-.68.86h-1a.65.65,0,0,1-.68-.54L8.9,35.66c0-.14-.11-.22-.22-.22H8.62c-.11,0-.18.07-.22.22l-6,21.21a.65.65,0,0,1-.68.54h-1A.64.64,0,0,1,0,56.58Z" />
+                                    <path
+                                        d="M22.24,34.58a.34.34,0,0,0-.36.36v9.78a.34.34,0,0,0,.36.36h4.17a5.25,5.25,0,0,0,0-10.5Zm0,12.8a.34.34,0,0,0-.36.36v9a.72.72,0,0,1-.72.72H20.3a.72.72,0,0,1-.72-.72V33a.72.72,0,0,1,.72-.72h6.11A7.55,7.55,0,0,1,34,39.82c0,3.24-1.69,5.21-4.28,6.83a.75.75,0,0,0-.25,1.15L34,56.36a.69.69,0,0,1-.68,1.08h-.79a1.06,1.06,0,0,1-1-.72l-4.6-8.91a.7.7,0,0,0-.68-.43Z" />
+                                    <path
+                                        d="M40.18,54.78a.34.34,0,0,0,.36.36h8.81a.72.72,0,0,1,.72.72v.86a.72.72,0,0,1-.72.72H38.59a.72.72,0,0,1-.72-.72V33a.72.72,0,0,1,.72-.72h.86a.72.72,0,0,1,.72.72Z" />
+                                    <path
+                                        d="M55.42,54.78a.34.34,0,0,0,.36.36h9.38a.72.72,0,0,1,.72.72v.86a.72.72,0,0,1-.72.72H53.83a.72.72,0,0,1-.72-.72V33a.72.72,0,0,1,.72-.72H65.09a.72.72,0,0,1,.72.72v.86a.72.72,0,0,1-.72.72H55.78a.34.34,0,0,0-.36.36v8.16a.34.34,0,0,0,.36.36h8.91a.72.72,0,0,1,.72.72V45a.72.72,0,0,1-.72.72H55.78a.34.34,0,0,0-.36.36Z" />
+                                    <path
+                                        d="M75.65,44.93c-2.62-.61-6-2-6-6.18S73,32,76.66,32a6.68,6.68,0,0,1,7,6.76v.47a.72.72,0,0,1-.72.72h-.86a.72.72,0,0,1-.72-.72v-.47a4.45,4.45,0,0,0-4.71-4.46A4.37,4.37,0,0,0,72,38.75c0,3.23,3.38,3.56,5.86,4.31,3.88,1.19,6.58,2.77,6.58,7.19,0,4.71-3.67,7.48-7.73,7.48a7.4,7.4,0,0,1-7.73-7.48v-.58a.72.72,0,0,1,.72-.72h.9a.72.72,0,0,1,.72.72v.58a5.13,5.13,0,0,0,5.39,5.18c3.27,0,5.39-2.12,5.39-5.18,0-3.27-2.3-4.35-6.4-5.32" />
+                                </g>
+                                <g id="logo-line1" style="clip-path: url(#logo-mask-line1)">
+                                    <path
+                                        d="M10.5,25.18a.68.68,0,0,1-.68.54H7.66A.68.68,0,0,1,7,25.18L.15,1.42A.67.67,0,0,1,.83.56h1a.65.65,0,0,1,.68.54L8.49,22.31q.05.22.22.22h.07c.11,0,.18-.07.22-.22L15,1.1a.65.65,0,0,1,.68-.54h1a.64.64,0,0,1,.68.83Z" />
+                                    <path
+                                        d="M22.58,2.86a.34.34,0,0,0-.36.36V13a.34.34,0,0,0,.36.36h4.17a5.25,5.25,0,1,0,0-10.5Zm0,12.8a.34.34,0,0,0-.36.36v9a.72.72,0,0,1-.72.72h-.86a.72.72,0,0,1-.72-.72V1.28a.72.72,0,0,1,.72-.72h6.11A7.55,7.55,0,0,1,34.3,8.11c0,3.23-1.69,5.21-4.28,6.83a.75.75,0,0,0-.25,1.15l4.53,8.55a.69.69,0,0,1-.68,1.08h-.79a1.06,1.06,0,0,1-1-.72l-4.6-8.91a.7.7,0,0,0-.68-.43Z" />
+                                </g>
+                            </svg>
+                        </div>
+                        <div class="mt-[-60px] ml-[110px] maxmd:ml-[60px] maxxl:ml-[30px]">
+                            <div class="ml-[10px]">
+                                <a href="#">
+                                    <span
+                                        class="roboto-font inline-block mr-[10px] text-blck hover:text-gren duration-500 float-right mt-[45px] text-[14px]">EN</span>
+                                </a>
+                                <a href="#">
+                                    <span
+                                        class="roboto-font inline-block mr-[10px] font-bold text-blck hover:text-gren duration-500 float-right mt-[45px] text-[14px]">FR</span>
+                                </a>
+                            </div>
+                            <div class="mt-[65px] pt-[15px] pb-[15px] pr-[15px] pl-[15px] hover:bg-gren duration-700">
+                                <i class="fa-solid fa-ticket text-[40px] rotate-45" style="color: #000000;"></i>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </nav>
+
         </div>
+        <!-- mobile menu end -->
         <div class="container-fluid bg-cover bg-no-repeat pb-[205px] max:pb-[705px]"
             style="background-image: url(/assets/images/header-background.jpg);">
             <div class=" relative">
@@ -150,9 +255,12 @@
                 </div>
                 <div class="partners-wrapper full-size z-10 pt-[80px] ">
                     <a href="https://group.bnpparibas/"
-                        class="inline-block mr-[10px] ml-[235px] max:ml-[1300px] 2xl:ml-[230px] coxl:ml-[160px] xl:ml-[50px] md:ml-[50px] md:mr-0 maxcomd:ml-[30px] maxcomd:mr-[10px] partner-link partner-name-bnp-paribas" data-aos="slide-left" data-aos-delay="50" data-aos-duration="1000" data-aos-easing="ease-in-out" data-aos-anchor-placement="top-center">
-                        <svg class="w-[180px] md:w-[140px] maxcomd:w-[120px] fill-white hover:fill-black duration-500" id="Calque_1"
-                            data-name="Calque 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 293.66 89.6">
+                        class="inline-block mr-[10px] ml-[235px] max:ml-[1300px] 2xl:ml-[230px] coxl:ml-[160px] xl:ml-[50px] md:ml-[50px] md:mr-0 maxcomd:ml-[30px] maxcomd:mr-[10px] maxmd:ml-0 maxxl:mr-[5px] partner-link partner-name-bnp-paribas"
+                        data-aos="slide-left" data-aos-delay="50" data-aos-duration="1000" data-aos-easing="ease-in-out"
+                        data-aos-anchor-placement="top-center">
+                        <svg class="w-[180px] md:w-[140px] maxcomd:w-[120px] maxxl:w-[100px] fill-white hover:fill-black duration-500"
+                            id="Calque_1" data-name="Calque 1" xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 293.66 89.6">
                             <title>bnp</title>
                             <g>
                                 <path
@@ -232,8 +340,10 @@
                         </svg>
                     </a>
                     <a href="http://www.fisheyelagence.com/"
-                        class="inline-block mr-[10px] md:mr-[20px] ml-[100px] md:ml-[20px] maxcomd:ml-0 maxcomd:mr-[10px] partner-link partner-name-fisheye" data-aos="slide-left" data-aos-delay="50" data-aos-duration="1000" data-aos-easing="ease-in-out" data-aos-anchor-placement="top-center">
-                        <svg class="w-[113px] md:w-[100px] maxcomd:w-[80px] fill-white hover:fill-black duration-500"
+                        class="inline-block mr-[10px] md:mr-[20px] ml-[100px] md:ml-[20px] maxcomd:ml-0 maxcomd:mr-[10px] maxxl:mr-[5px] partner-link partner-name-fisheye"
+                        data-aos="slide-left" data-aos-delay="50" data-aos-duration="1000" data-aos-easing="ease-in-out"
+                        data-aos-anchor-placement="top-center">
+                        <svg class="w-[113px] md:w-[100px] maxcomd:w-[80px] maxxl:w-[70px] fill-white hover:fill-black duration-500"
                             xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 80">
                             <path
                                 d="M64.37,54.53C67.16,65.86,110.43,71.4,106,41.37c-2.7-18.39-33-10-30.75-19.89,1.53-6.72,21.77-5.53,24.56,4.73a17,17,0,0,1,2.07-1.62c.77-.51,1.63-1,1.63-1C99.44,9.56,61.58,10,63.35,33.34,65.14,57,94.15,44.87,95,55c.58,6.59-21.83,7.84-26.47-3.82a8.52,8.52,0,0,1-2.11,2.14,11.15,11.15,0,0,1-2.08,1.25" />
@@ -250,8 +360,10 @@
                         </svg>
                     </a>
                     <a href="https://www.rencontres-arles.com/"
-                        class="inline-block ml-[80px] max:ml-[80px] 2xl:ml-[80px] coxl:ml-[80px] xl:ml-[80px] md:ml-[5px] maxcomd:ml-0 maxcomd:mr-0 partner-link partner-name-arles-les-rencontres-de-la-photographie" data-aos="slide-left" data-aos-delay="50" data-aos-duration="1000" data-aos-easing="ease-in-out" data-aos-anchor-placement="top-center">
-                        <svg class="w-[140px] md:w-[120px] maxcomd:w-[100px] fill-white hover:fill-black duration-500"
+                        class="inline-block ml-[80px] max:ml-[80px] 2xl:ml-[80px] coxl:ml-[80px] xl:ml-[80px] md:ml-[5px] maxcomd:ml-0 maxcomd:mr-0 partner-link partner-name-arles-les-rencontres-de-la-photographie"
+                        data-aos="slide-left" data-aos-delay="50" data-aos-duration="1000" data-aos-easing="ease-in-out"
+                        data-aos-anchor-placement="top-center">
+                        <svg class="w-[140px] md:w-[120px] maxcomd:w-[100px] maxxl:w-[90px] fill-white hover:fill-black duration-500"
                             xmlns="http://www.w3.org/2000/svg" viewBox="0 0 260 83">
                             <path
                                 d="M11.1.22,0,35.53v3.62H8.93l2.56-9.06H22l2.72,9.06H35L22.44.22ZM13.54,21.8l3-10.79h.22l3,10.79Z" />
@@ -325,45 +437,51 @@
                     </a>
                 </div>
                 <div>
-                    <button class="rounded-none w-[168px] h-[52px] md:w-[120px] md:h-[40px] md:text-[15px] maxcomd:hidden roboto-font font-bold text-[18px] bg-blck text-c11 rotate-[270deg] text-wite mt-[30px] float-right hover:bg-gren duration-500">
+                    <button
+                        class="rounded-none w-[168px] h-[52px] md:w-[120px] md:h-[40px] md:text-[15px] maxcomd:hidden roboto-font font-bold text-[18px] bg-blck text-c11 rotate-[270deg] text-wite mt-[30px] float-right hover:bg-gren duration-500">
                         BILLETTERIE
                     </button>
                 </div>
             </div>
             <div class="container ps-[153px] maxcomd:ps-[40px] header-text mt-[-40px] md:mt-[10px] max:mt-[340px]">
-                <h2 class="persu-font font-bold text-[190px] leading-[176px] text-black tracking-[-20px] max:text-[370px] max:leading-[330px] 2xl:text-[190px] coxl:text-[170px] xl:text-[130px] xl:tracking-[-15px] xl:leading-[150px] md:text-[113px] md:leading-[110px] md:tracking-[-15px] maxcomd:text-[85px] maxcomd:leading-[90px] maxcomd:tracking-[-10px]">
-                    <span>V</span>
-                    <span>R</span>
+                <h2
+                    class="persu-font font-bold text-[190px] leading-[176px] text-black tracking-[-20px] max:text-[370px] max:leading-[330px] 2xl:text-[190px] coxl:text-[170px] xl:text-[130px] xl:tracking-[-15px] xl:leading-[150px] md:text-[113px] md:leading-[110px] md:tracking-[-15px] maxcomd:text-[85px] maxcomd:leading-[90px] maxcomd:tracking-[-10px] maxmd:text-[75px] maxxl:text-[60px] maxxl:leading-[80px] maxxl:tracking-[-8px]">
+                    <span class="animated-letter">V</span>
+                    <span class="animated-letter">R</span>
                 </h2>
             </div>
             <div class="container ps-[51px] header-text mt-[-15px] maxcomd:ps-[0px]">
-                <h2 class="persu-font font-bold text-[190px] leading-[176px] text-black tracking-[-20px] max:text-[370px] max:leading-[330px] 2xl:text-[190px] coxl:text-[170px] xl:text-[130px] xl:tracking-[-15px] xl:leading-[150px] md:text-[113px] md:leading-[110px] md:tracking-[-15px] maxcomd:text-[85px] maxcomd:leading-[90px] maxcomd:tracking-[-10px]">
-                    <span>A</span>
-                    <span>R</span>
-                    <span>L</span>
-                    <span>E</span>
-                    <span>S</span>
+                <h2
+                    class="persu-font font-bold text-[190px] leading-[176px] text-black tracking-[-20px] max:text-[370px] max:leading-[330px] 2xl:text-[190px] coxl:text-[170px] xl:text-[130px] xl:tracking-[-15px] xl:leading-[150px] md:text-[113px] md:leading-[110px] md:tracking-[-15px] maxcomd:text-[85px] maxcomd:leading-[90px] maxcomd:tracking-[-10px] maxmd:text-[75px] maxxl:text-[60px] maxxl:leading-[80px] maxxl:tracking-[-8px]">
+                    <span class="animated-letter">A</span>
+                    <span class="animated-letter">R</span>
+                    <span class="animated-letter">L</span>
+                    <span class="animated-letter">E</span>
+                    <span class="animated-letter">S</span>
                 </h2>
             </div>
             <div class="container ps-[340px]  md:ps-[90px] header-text mt-[-15px] maxcomd:ps-[50px]">
-                <h2 class="persu-font font-bold text-[190px] leading-[176px] text-black tracking-[-20px] max:text-[370px] max:leading-[330px] 2xl:text-[190px] coxl:text-[170px] xl:text-[130px] xl:tracking-[-15px] xl:leading-[150px] md:text-[113px] md:leading-[110px] md:tracking-[-15px] maxcomd:text-[85px] maxcomd:leading-[90px] maxcomd:tracking-[-10px]">
-                    <span>F</span>
-                    <span>E</span>
-                    <span>S</span>
-                    <span>T</span>
-                    <span>I</span>
-                    <span>V</span>
-                    <span>A</span>
-                    <span>L</span>
+                <h2
+                    class="persu-font font-bold text-[190px] leading-[176px] text-black tracking-[-20px] max:text-[370px] max:leading-[330px] 2xl:text-[190px] coxl:text-[170px] xl:text-[130px] xl:tracking-[-15px] xl:leading-[150px] md:text-[113px] md:leading-[110px] md:tracking-[-15px] maxcomd:text-[85px] maxcomd:leading-[90px] maxcomd:tracking-[-10px] maxmd:text-[75px] maxxl:text-[60px] maxxl:leading-[80px] maxxl:tracking-[-8px]">
+                    <span class="animated-letter">F</span>
+                    <span class="animated-letter">E</span>
+                    <span class="animated-letter">S</span>
+                    <span class="animated-letter">T</span>
+                    <span class="animated-letter">I</span>
+                    <span class="animated-letter">V</span>
+                    <span class="animated-letter">A</span>
+                    <span class="animated-letter">L</span>
                 </h2>
             </div>
-            <div class="container nunito-font text-[22px] pl-[50px] max:text-[41px] max:leading-[51px] md:mt-[50px] maxcomd:text-[10px]" style="margin-top: 20px;">
+            <div class="container nunito-font text-[22px] pl-[50px] max:text-[41px] max:leading-[51px] md:mt-[50px] maxcomd:text-[10px]"
+                style="margin-top: 20px;">
                 <span class="font-bold text-black">1ER JUILLET - 25 AOÛT 2019</span>
             </div>
         </div>
         <div class="container-fluid bg-c2">
             <div class="row">
-                <div class="col-md-1 mt-[50px]" data-aos="fade-up" data-aos-duration="1000" data-aos-easing="ease-in-out" data-aos-once="false">
+                <div class="col-md-1 mt-[50px]" data-aos="fade-up" data-aos-duration="1000"
+                    data-aos-easing="ease-in-out" data-aos-once="false">
                     <div class="rotate-[270deg] maxcomd:hidden">
                         <div class="flex">
                             <span class="font-bold text-c3" style="margin-top: -7px;">NEWS</span>
@@ -371,7 +489,8 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-5 md:w-[100%] md:ml-[90px] maxcomd:ml-0" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="50" data-aos-easing="ease-in-out" data-aos-once="false">
+                <div class="col-md-5 md:w-[100%] md:ml-[90px] maxcomd:ml-0" data-aos="fade-up" data-aos-duration="1000"
+                    data-aos-delay="50" data-aos-easing="ease-in-out" data-aos-once="false">
                     <div
                         class="w-[437px] h-[386px] max:w-[626px] max:h-[310px] bg-black text-center content-center cursor-pointer max-w-full d-flex flex-column justify-content-center align-items-center max:ml-[200px]">
                         <span class="text-wite hover:text-gren duration-500 font-bold roboto-font"
@@ -386,7 +505,8 @@
                         </span>
                     </div>
                 </div>
-                <div class="col-md-6 md:w-[100%] md:ml-[90px] md:mt-[30px] maxcomd:ml-0" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500" data-aos-easing="ease-in-out" data-aos-once="false">
+                <div class="col-md-6 md:w-[100%] md:ml-[90px] md:mt-[30px] maxcomd:ml-0" data-aos="fade-up"
+                    data-aos-duration="1000" data-aos-delay="500" data-aos-easing="ease-in-out" data-aos-once="false">
                     <div
                         class="w-[437px] h-[386px] max:w-[626px] max:h-[310px] max:ml-[100px] bg-blck text-center content-center max-w-full d-flex flex-column justify-content-center align-items-center cursor-pointer">
                         <span class="text-wite hover:text-gren duration-500 font-bold roboto-font"
@@ -407,7 +527,8 @@
             <div class="row">
                 <div class="container mt-[50px]">
                     <div class="row">
-                        <div class="col-md-1" data-aos="fade-up" data-aos-duration="1000" data-aos-easing="ease-in-out" data-aos-once="false">
+                        <div class="col-md-1" data-aos="fade-up" data-aos-duration="1000" data-aos-easing="ease-in-out"
+                            data-aos-once="false">
                             <div class="rotate-[270deg] maxcomd:hidden">
                                 <div class="flex">
                                     <span class="font-bold text-c3"
@@ -418,8 +539,11 @@
                         </div>
                         <div class="col-md-11">
                             <div class="owl-carousel">
-                                <div class="cursor-pointer" 
-                                style="background-image: url(/assets/images/Eve-La-danse...-360x240.png); width: 278px; height: 186px; object-fit: contain;" onmouseover="showghaib()" onmouseout="hideghaib()" data-aos="slide-up" data-aos-duration="1000" data-aos-delay="500" data-aos-easing="ease-in-out" data-aos-once="false">
+                                <div class="cursor-pointer"
+                                    style="background-image: url(/assets/images/Eve-La-danse...-360x240.png); width: 278px; height: 186px; object-fit: contain;"
+                                    onmouseover="showghaib()" onmouseout="hideghaib()" data-aos="slide-up"
+                                    data-aos-duration="1000" data-aos-delay="500" data-aos-easing="ease-in-out"
+                                    data-aos-once="false">
                                     <div class="container cursor-pointer ghaib" style="height: 186px;">
                                         <h2
                                             class="text-[26px] roboto-font text-wite leading-[30px] font-semibold ml-[20px] pt-[30px] pb-[30px]">
@@ -436,7 +560,9 @@
                                 </div>
                                 <div class="cursor-pointer"
                                     style="background-image: url(/assets/images/Emergence-360x240.jpg); width: 278px; height: 186px; object-fit: contain;"
-                                    onmouseover="showghaib2()" onmouseout="hideghaib2()" data-aos="slide-up" data-aos-duration="1000" data-aos-delay="400" data-aos-easing="ease-in-out" data-aos-once="false">
+                                    onmouseover="showghaib2()" onmouseout="hideghaib2()" data-aos="slide-up"
+                                    data-aos-duration="1000" data-aos-delay="400" data-aos-easing="ease-in-out"
+                                    data-aos-once="false">
                                     <div class="container cursor-pointer ghaib2" style="height: 186px;">
                                         <h2
                                             class="text-[26px] roboto-font text-wite leading-[30px] font-semibold ml-[20px] pt-[30px] pb-[30px]">
@@ -453,7 +579,9 @@
                                 </div>
                                 <div class="cursor-pointer"
                                     style="background-image: url(/assets/images/7-Alchimies-en-realite-virtuelle2-360x240.png); width: 278px; height: 186px; object-fit: contain;"
-                                    onmouseover="showghaib3()" onmouseout="hideghaib3()" data-aos="slide-up" data-aos-duration="1000" data-aos-delay="300" data-aos-easing="ease-in-out" data-aos-once="false">
+                                    onmouseover="showghaib3()" onmouseout="hideghaib3()" data-aos="slide-up"
+                                    data-aos-duration="1000" data-aos-delay="300" data-aos-easing="ease-in-out"
+                                    data-aos-once="false">
                                     <div class="container cursor-pointer ghaib3" style="height: 186px;">
                                         <h2
                                             class="text-[26px] roboto-font text-wite leading-[30px] font-semibold ml-[20px] pt-[30px] pb-[30px]">
@@ -470,8 +598,9 @@
                                 </div>
                                 <div class="cursor-pointer"
                                     style="background-image: url(/assets/images/7-Lives-360x240.png); width: 278px; height: 186px; object-fit: contain;"
-                                    onmouseover="showghaib4()" onmouseout="hideghaib4()"
-                                    data-aos="slide-up" data-aos-duration="1000" data-aos-delay="200" data-aos-easing="ease-in-out" data-aos-once="false">
+                                    onmouseover="showghaib4()" onmouseout="hideghaib4()" data-aos="slide-up"
+                                    data-aos-duration="1000" data-aos-delay="200" data-aos-easing="ease-in-out"
+                                    data-aos-once="false">
                                     <div class="container cursor-pointer ghaib4" style="height: 186px;">
                                         <h2
                                             class="text-[26px] roboto-font text-wite leading-[30px] font-semibold ml-[20px] pt-[30px] pb-[30px]">
@@ -488,7 +617,9 @@
                                 </div>
                                 <div class="cursor-pointer"
                                     style="background-image: url(/assets/images/Accused-Walter-Sisulu-360x240.png); width: 278px; height: 186px; object-fit: contain;"
-                                    onmouseover="showghaib5()" onmouseout="hideghaib5()" data-aos="slide-up" data-aos-duration="1000" data-aos-delay="100" data-aos-easing="ease-in-out" data-aos-once="false">
+                                    onmouseover="showghaib5()" onmouseout="hideghaib5()" data-aos="slide-up"
+                                    data-aos-duration="1000" data-aos-delay="100" data-aos-easing="ease-in-out"
+                                    data-aos-once="false">
                                     <div class="container cursor-pointer ghaib5" style="height: 186px;">
                                         <h2
                                             class="text-[26px] roboto-font text-wite leading-[30px] font-semibold ml-[20px] pt-[30px] pb-[30px]">
@@ -505,7 +636,9 @@
                                 </div>
                                 <div class="cursor-pointer"
                                     style="background-image: url(/assets/images/Afterimage-for-Tomorrow-360x240.jpg); width: 278px; height: 186px; object-fit: contain;"
-                                    onmouseover="showghaib6()" onmouseout="hideghaib6()" data-aos="slide-up" data-aos-duration="1000" data-aos-delay="100" data-aos-easing="ease-in-out" data-aos-once="false">
+                                    onmouseover="showghaib6()" onmouseout="hideghaib6()" data-aos="slide-up"
+                                    data-aos-duration="1000" data-aos-delay="100" data-aos-easing="ease-in-out"
+                                    data-aos-once="false">
                                     <div class="container cursor-pointer ghaib6" style="height: 186px;">
                                         <h2
                                             class="text-[26px] roboto-font text-wite leading-[30px] font-semibold ml-[20px] pt-[30px] pb-[30px]">
@@ -522,7 +655,9 @@
                                 </div>
                                 <div class="cursor-pointer"
                                     style="background-image: url(/assets/images/Awavena-360x240.jpg); width: 278px; height: 186px; object-fit: contain;"
-                                    onmouseover="showghaib7()" onmouseout="hideghaib7()" data-aos="slide-up" data-aos-duration="1000" data-aos-delay="100" data-aos-easing="ease-in-out" data-aos-once="false">
+                                    onmouseover="showghaib7()" onmouseout="hideghaib7()" data-aos="slide-up"
+                                    data-aos-duration="1000" data-aos-delay="100" data-aos-easing="ease-in-out"
+                                    data-aos-once="false">
                                     <div class="container cursor-pointer ghaib7" style="height: 186px;">
                                         <h2
                                             class="text-[26px] roboto-font text-wite leading-[30px] font-semibold ml-[20px] pt-[30px] pb-[30px]">
@@ -539,7 +674,9 @@
                                 </div>
                                 <div class="cursor-pointer"
                                     style="background-image: url(/assets/images/Ayahuasca-360x240.jpg); width: 278px; height: 186px; object-fit: contain;"
-                                    onmouseover="showghaib8()" onmouseout="hideghaib8()" data-aos="slide-up" data-aos-duration="1000" data-aos-delay="100" data-aos-easing="ease-in-out" data-aos-once="false">
+                                    onmouseover="showghaib8()" onmouseout="hideghaib8()" data-aos="slide-up"
+                                    data-aos-duration="1000" data-aos-delay="100" data-aos-easing="ease-in-out"
+                                    data-aos-once="false">
                                     <div class="container cursor-pointer ghaib8" style="height: 186px;">
                                         <h2
                                             class="text-[26px] roboto-font text-wite leading-[30px] font-semibold ml-[20px] pt-[30px] pb-[30px]">
@@ -556,7 +693,9 @@
                                 </div>
                                 <div class="cursor-pointer"
                                     style="background-image: url(/assets/images/Bonfire-270x180.png); width: 278px; height: 186px; object-fit: contain;"
-                                    onmouseover="showghaib9()" onmouseout="hideghaib9()" data-aos="slide-up" data-aos-duration="1000" data-aos-delay="100" data-aos-easing="ease-in-out" data-aos-once="false">
+                                    onmouseover="showghaib9()" onmouseout="hideghaib9()" data-aos="slide-up"
+                                    data-aos-duration="1000" data-aos-delay="100" data-aos-easing="ease-in-out"
+                                    data-aos-once="false">
                                     <div class="container cursor-pointer ghaib9" style="height: 186px;">
                                         <h2
                                             class="text-[26px] roboto-font text-wite leading-[30px] font-semibold ml-[20px] pt-[30px] pb-[30px]">
@@ -573,7 +712,9 @@
                                 </div>
                                 <div class="cursor-pointer"
                                     style="background-image: url(/assets/images/Bruegel-LucidRealities-360x240.png); width: 278px; height: 186px; object-fit: contain;"
-                                    onmouseover="showghaib10()" onmouseout="hideghaib10()" data-aos="slide-up" data-aos-duration="1000" data-aos-delay="100" data-aos-easing="ease-in-out" data-aos-once="false">
+                                    onmouseover="showghaib10()" onmouseout="hideghaib10()" data-aos="slide-up"
+                                    data-aos-duration="1000" data-aos-delay="100" data-aos-easing="ease-in-out"
+                                    data-aos-once="false">
                                     <div class="container cursor-pointer ghaib10" style="height: 186px;">
                                         <h2
                                             class="text-[26px] roboto-font text-wite leading-[30px] font-semibold ml-[20px] pt-[30px] pb-[30px]">
@@ -598,75 +739,102 @@
             <div class="row">
                 <div class="container mt-[50px]">
                     <div class="row">
-                        <div class="col-md-1" data-aos="slide-up" data-aos-duration="1000" data-aos-easing="ease-in-out" data-aos-once="false">
+                        <div class="col-md-1" data-aos="slide-up" data-aos-duration="1000" data-aos-easing="ease-in-out"
+                            data-aos-once="false">
                             <div class="rotate-[270deg] ml-[300px]">
                                 <div class="flex">
-                                    <span class="font-bold text-c3"
-                                        style="margin-top: -7px; margin-left: -130px;">PROGRAMME 2019</span>
                                     <span class="bg-black w-[30px] h-[12px] "></span>
                                 </div>
                             </div>
                         </div>
                         <div class="col-md-6 pb-[220px] md:w-[80%]">
-                            <h2
-                                class="font-bold roboto-font text-[18px] text-black leading-[30px] pt-[13px] pb-[13px] hover:text-[30px] duration-200" data-aos="slide-up" data-aos-duration="1000" data-aos-easing="ease-in-out" data-aos-once="false">
+                            <h2 class="font-bold roboto-font text-[18px] text-black leading-[30px] pt-[13px] pb-[13px] hover:text-[30px] duration-200"
+                                data-aos="slide-up" data-aos-duration="1000" data-aos-easing="ease-in-out"
+                                data-aos-once="false">
                                 Venderdi 23 août – Atelier Jeune public</h2>
-                            <div class="bg-black h-[1px]" data-aos="slide-up" data-aos-duration="1000" data-aos-easing="ease-in-out" data-aos-once="false"></div>
-                            <h2
-                                class="font-bold roboto-font text-[18px] text-black leading-[30px] pt-[13px] pb-[13px] hover:text-[30px] duration-200" data-aos="slide-up" data-aos-duration="1000" data-aos-easing="ease-in-out" data-aos-once="false">
+                            <div class="bg-black h-[1px]" data-aos="slide-up" data-aos-duration="1000"
+                                data-aos-easing="ease-in-out" data-aos-once="false"></div>
+                            <h2 class="font-bold roboto-font text-[18px] text-black leading-[30px] pt-[13px] pb-[13px] hover:text-[30px] duration-200"
+                                data-aos="slide-up" data-aos-duration="1000" data-aos-easing="ease-in-out"
+                                data-aos-once="false">
                                 Venderdi 16 août – Atelier Jeune public</h2>
-                            <div class="bg-black h-[1px]" data-aos="slide-up" data-aos-duration="1000" data-aos-easing="ease-in-out" data-aos-once="false"></div>
-                            <h2
-                                class="font-bold roboto-font text-[18px] text-black leading-[30px] pt-[13px] pb-[13px] hover:text-[30px] duration-200" data-aos="slide-up" data-aos-duration="1000" data-aos-easing="ease-in-out" data-aos-once="false">
+                            <div class="bg-black h-[1px]" data-aos="slide-up" data-aos-duration="1000"
+                                data-aos-easing="ease-in-out" data-aos-once="false"></div>
+                            <h2 class="font-bold roboto-font text-[18px] text-black leading-[30px] pt-[13px] pb-[13px] hover:text-[30px] duration-200"
+                                data-aos="slide-up" data-aos-duration="1000" data-aos-easing="ease-in-out"
+                                data-aos-once="false">
                                 Venderdi 9 août – Atelier Jeune public</h2>
-                            <div class="bg-black h-[1px]" data-aos="slide-up" data-aos-duration="1000" data-aos-easing="ease-in-out" data-aos-once="false"></div>
-                            <h2
-                                class="font-bold roboto-font text-[18px] text-black leading-[30px] pt-[13px] pb-[13px] hover:text-[30px] duration-200" data-aos="slide-up" data-aos-duration="1000" data-aos-easing="ease-in-out" data-aos-once="false">
+                            <div class="bg-black h-[1px]" data-aos="slide-up" data-aos-duration="1000"
+                                data-aos-easing="ease-in-out" data-aos-once="false"></div>
+                            <h2 class="font-bold roboto-font text-[18px] text-black leading-[30px] pt-[13px] pb-[13px] hover:text-[30px] duration-200"
+                                data-aos="slide-up" data-aos-duration="1000" data-aos-easing="ease-in-out"
+                                data-aos-once="false">
                                 Venderdi 2 août – Atelier Jeune public</h2>
-                            <div class="bg-black h-[1px]" data-aos="slide-up" data-aos-duration="1000" data-aos-easing="ease-in-out" data-aos-once="false"></div>
-                            <h2
-                                class="font-bold roboto-font text-[18px] text-black leading-[30px] pt-[13px] pb-[13px] hover:text-[30px] duration-200" data-aos="slide-up" data-aos-duration="1000" data-aos-easing="ease-in-out" data-aos-once="false">
+                            <div class="bg-black h-[1px]" data-aos="slide-up" data-aos-duration="1000"
+                                data-aos-easing="ease-in-out" data-aos-once="false"></div>
+                            <h2 class="font-bold roboto-font text-[18px] text-black leading-[30px] pt-[13px] pb-[13px] hover:text-[30px] duration-200"
+                                data-aos="slide-up" data-aos-duration="1000" data-aos-easing="ease-in-out"
+                                data-aos-once="false">
                                 Venderdi 26 août – Atelier Jeune public</h2>
-                            <div class="bg-black h-[1px]" data-aos="slide-up" data-aos-duration="1000" data-aos-easing="ease-in-out" data-aos-once="false"></div>
-                            <h2
-                                class="font-bold roboto-font text-[18px] text-black leading-[30px] pt-[13px] pb-[13px] hover:text-[30px] duration-200" data-aos="slide-up" data-aos-duration="1000" data-aos-easing="ease-in-out" data-aos-once="false">
+                            <div class="bg-black h-[1px]" data-aos="slide-up" data-aos-duration="1000"
+                                data-aos-easing="ease-in-out" data-aos-once="false"></div>
+                            <h2 class="font-bold roboto-font text-[18px] text-black leading-[30px] pt-[13px] pb-[13px] hover:text-[30px] duration-200"
+                                data-aos="slide-up" data-aos-duration="1000" data-aos-easing="ease-in-out"
+                                data-aos-once="false">
                                 Venderdi 19 août – Atelier Jeune public</h2>
-                            <div class="bg-black h-[1px]" data-aos="slide-up" data-aos-duration="1000" data-aos-easing="ease-in-out" data-aos-once="false"></div>
-                            <h2
-                                class="font-bold roboto-font text-[18px] text-black leading-[30px] pt-[13px] pb-[13px] hover:text-[30px] duration-200" data-aos="slide-up" data-aos-duration="1000" data-aos-easing="ease-in-out" data-aos-once="false">
+                            <div class="bg-black h-[1px]" data-aos="slide-up" data-aos-duration="1000"
+                                data-aos-easing="ease-in-out" data-aos-once="false"></div>
+                            <h2 class="font-bold roboto-font text-[18px] text-black leading-[30px] pt-[13px] pb-[13px] hover:text-[30px] duration-200"
+                                data-aos="slide-up" data-aos-duration="1000" data-aos-easing="ease-in-out"
+                                data-aos-once="false">
                                 Venderdi 12 août – Atelier Jeune public</h2>
-                            <div class="bg-black h-[1px]" data-aos="slide-up" data-aos-duration="1000" data-aos-easing="ease-in-out" data-aos-once="false"></div>
-                            <h2
-                                class="font-bold roboto-font text-[18px] text-black leading-[30px] pt-[13px] pb-[13px] hover:text-[30px] duration-200" data-aos="slide-up" data-aos-duration="1000" data-aos-easing="ease-in-out" data-aos-once="false">
+                            <div class="bg-black h-[1px]" data-aos="slide-up" data-aos-duration="1000"
+                                data-aos-easing="ease-in-out" data-aos-once="false"></div>
+                            <h2 class="font-bold roboto-font text-[18px] text-black leading-[30px] pt-[13px] pb-[13px] hover:text-[30px] duration-200"
+                                data-aos="slide-up" data-aos-duration="1000" data-aos-easing="ease-in-out"
+                                data-aos-once="false">
                                 Dimanche 7 Juillet – Performance : Eve, la danse est un e...</h2>
-                            <div class="bg-black h-[1px]" data-aos="slide-up" data-aos-duration="1000" data-aos-easing="ease-in-out" data-aos-once="false"></div>
-                            <h2
-                                class="font-bold roboto-font text-[18px] text-black leading-[30px] pt-[13px] pb-[13px] hover:text-[30px] duration-200" data-aos="slide-up" data-aos-duration="1000" data-aos-easing="ease-in-out" data-aos-once="false">
+                            <div class="bg-black h-[1px]" data-aos="slide-up" data-aos-duration="1000"
+                                data-aos-easing="ease-in-out" data-aos-once="false"></div>
+                            <h2 class="font-bold roboto-font text-[18px] text-black leading-[30px] pt-[13px] pb-[13px] hover:text-[30px] duration-200"
+                                data-aos="slide-up" data-aos-duration="1000" data-aos-easing="ease-in-out"
+                                data-aos-once="false">
                                 Samedi 6 Juillet – Performance : Eve, la danse est un esp...</h2>
-                            <div class="bg-black h-[1px]" data-aos="slide-up" data-aos-duration="1000" data-aos-easing="ease-in-out" data-aos-once="false"></div>
-                            <h2
-                                class="font-bold roboto-font text-[18px] text-black leading-[30px] pt-[13px] pb-[13px] hover:text-[30px] duration-200" data-aos="slide-up" data-aos-duration="1000" data-aos-easing="ease-in-out" data-aos-once="false">
+                            <div class="bg-black h-[1px]" data-aos="slide-up" data-aos-duration="1000"
+                                data-aos-easing="ease-in-out" data-aos-once="false"></div>
+                            <h2 class="font-bold roboto-font text-[18px] text-black leading-[30px] pt-[13px] pb-[13px] hover:text-[30px] duration-200"
+                                data-aos="slide-up" data-aos-duration="1000" data-aos-easing="ease-in-out"
+                                data-aos-once="false">
                                 Vendredi 5 juillet – Les Rencontres du Virtuel</h2>
-                            <div class="bg-black h-[1px]" data-aos="slide-up" data-aos-duration="1000" data-aos-easing="ease-in-out" data-aos-once="false"></div>
-                            <h2
-                                class="font-bold roboto-font text-[18px] text-black leading-[30px] pt-[13px] pb-[13px] hover:text-[30px] duration-200" data-aos="slide-up" data-aos-duration="1000" data-aos-easing="ease-in-out" data-aos-once="false">
+                            <div class="bg-black h-[1px]" data-aos="slide-up" data-aos-duration="1000"
+                                data-aos-easing="ease-in-out" data-aos-once="false"></div>
+                            <h2 class="font-bold roboto-font text-[18px] text-black leading-[30px] pt-[13px] pb-[13px] hover:text-[30px] duration-200"
+                                data-aos="slide-up" data-aos-duration="1000" data-aos-easing="ease-in-out"
+                                data-aos-once="false">
                                 Jeudi 4 Juillet 2019 – Remise des prix</h2>
-                            <div class="bg-black h-[1px]" data-aos="slide-up" data-aos-duration="1000" data-aos-easing="ease-in-out" data-aos-once="false"></div>
-                            <h2
-                                class="font-bold roboto-font text-[18px] text-black leading-[30px] pt-[13px] pb-[13px] hover:text-[30px] duration-200" data-aos="slide-up" data-aos-duration="1000" data-aos-easing="ease-in-out" data-aos-once="false">
+                            <div class="bg-black h-[1px]" data-aos="slide-up" data-aos-duration="1000"
+                                data-aos-easing="ease-in-out" data-aos-once="false"></div>
+                            <h2 class="font-bold roboto-font text-[18px] text-black leading-[30px] pt-[13px] pb-[13px] hover:text-[30px] duration-200"
+                                data-aos="slide-up" data-aos-duration="1000" data-aos-easing="ease-in-out"
+                                data-aos-once="false">
                                 Mercredi 3 Juillet 2019 – Fête du festival</h2>
-                            <div class="bg-black h-[1px]" data-aos="slide-up" data-aos-duration="1000" data-aos-easing="ease-in-out" data-aos-once="false"></div>
-                            <h2
-                                class="font-bold roboto-font text-[18px] text-black leading-[30px] pt-[13px] pb-[13px] hover:text-[30px] duration-200" data-aos="slide-up" data-aos-duration="1000" data-aos-easing="ease-in-out" data-aos-once="false">
+                            <div class="bg-black h-[1px]" data-aos="slide-up" data-aos-duration="1000"
+                                data-aos-easing="ease-in-out" data-aos-once="false"></div>
+                            <h2 class="font-bold roboto-font text-[18px] text-black leading-[30px] pt-[13px] pb-[13px] hover:text-[30px] duration-200"
+                                data-aos="slide-up" data-aos-duration="1000" data-aos-easing="ease-in-out"
+                                data-aos-once="false">
                                 Lundi 1er Juillet 2019 – Ouverture du Festival</h2>
-                            <div class="bg-black h-[1px]" data-aos="slide-up" data-aos-duration="1000" data-aos-easing="ease-in-out" data-aos-once="false"></div>
+                            <div class="bg-black h-[1px]" data-aos="slide-up" data-aos-duration="1000"
+                                data-aos-easing="ease-in-out" data-aos-once="false"></div>
                         </div>
                         <div class="col-md-4 md:w-[60%] md:ml-[100px] md:mt-[-100px] maxcomd:ml-[0px] maxcomd:w-[80%]"
                             style="background-image: url(/assets/images/back-text.png); object-fit: contain; background-repeat: no-repeat; background-size: cover;">
                             <!-- first person picture  -->
                             <div class="row">
                                 <div class="col-md-4 pt-[40px]"
-                                    style="display: flex; flex-direction: column; align-items: flex-end;" data-aos="slide-left" data-aos-duration="1000" data-aos-delay="500" data-aos-easing="ease-in-out" data-aos-once="false">
+                                    style="display: flex; flex-direction: column; align-items: flex-end;"
+                                    data-aos="slide-left" data-aos-duration="1000" data-aos-delay="500"
+                                    data-aos-easing="ease-in-out" data-aos-once="false">
                                     <div style="text-align: right;">
                                         <h2 class="font-bold roboto-font text-black pb-[10px]" style="font-size: 20px;">
                                             Christopher Miles</h2>
@@ -680,7 +848,9 @@
                                 </div>
                                 <div class="col-md-6 offset-2">
                                     <div class="border-8 border-white float-right"
-                                        style="background-image: url(/assets/images/christopher-miles-f2-220x220.png); width: 220px; height: 222px; border-radius: 200px;" data-aos="slide-up" data-aos-duration="1000" data-aos-easing="ease-in-out" data-aos-once="false">
+                                        style="background-image: url(/assets/images/christopher-miles-f2-220x220.png); width: 220px; height: 222px; border-radius: 200px;"
+                                        data-aos="slide-up" data-aos-duration="1000" data-aos-easing="ease-in-out"
+                                        data-aos-once="false">
                                     </div>
                                 </div>
                             </div>
@@ -688,11 +858,15 @@
                             <div class="row mt-[40px]">
                                 <div class="col-md-6 offset-2">
                                     <div class="border-8 border-white float-right"
-                                        style="background-image: url(/assets/images/Renaud-Grand-Clement-220x220.png); width: 220px; height: 222px; border-radius: 200px;" data-aos="slide-up" data-aos-duration="1000" data-aos-delay="500" data-aos-easing="ease-in-out" data-aos-once="false">
+                                        style="background-image: url(/assets/images/Renaud-Grand-Clement-220x220.png); width: 220px; height: 222px; border-radius: 200px;"
+                                        data-aos="slide-up" data-aos-duration="1000" data-aos-delay="500"
+                                        data-aos-easing="ease-in-out" data-aos-once="false">
                                     </div>
                                 </div>
                                 <div class="col-md-4 pt-[40px]"
-                                    style="display: flex; flex-direction: column; align-items: flex-start;" data-aos="slide-right" data-aos-duration="1000" data-aos-delay="500" data-aos-easing="ease-in-out" data-aos-once="false">
+                                    style="display: flex; flex-direction: column; align-items: flex-start;"
+                                    data-aos="slide-right" data-aos-duration="1000" data-aos-delay="500"
+                                    data-aos-easing="ease-in-out" data-aos-once="false">
                                     <div>
                                         <h2 class="font-bold roboto-font text-black pb-[10px]" style="font-size: 20px;">
                                             Renaud Grand-Clément</h2>
@@ -708,7 +882,9 @@
                             <!-- third person picture  -->
                             <div class="row mt-[40px]">
                                 <div class="col-md-4 pt-[40px]"
-                                    style="display: flex; flex-direction: column; align-items: flex-end;" data-aos="slide-left" data-aos-duration="1000" data-aos-delay="500" data-aos-easing="ease-in-out" data-aos-once="false">
+                                    style="display: flex; flex-direction: column; align-items: flex-end;"
+                                    data-aos="slide-left" data-aos-duration="1000" data-aos-delay="500"
+                                    data-aos-easing="ease-in-out" data-aos-once="false">
                                     <div style="text-align: right;">
                                         <h2 class="font-bold roboto-font text-black pb-[10px]" style="font-size: 20px;">
                                             Charlotte Rampling</h2>
@@ -722,13 +898,16 @@
                                 </div>
                                 <div class="col-md-6 offset-2">
                                     <div class="border-8 border-white float-right"
-                                        style="background-image: url(/assets/images/Charlotte_Rampling_2016-2-220x220.jpg); width: 220px; height: 222px; border-radius: 200px;" data-aos="slide-up" data-aos-duration="1000" data-aos-delay="500" data-aos-easing="ease-in-out" data-aos-once="false">
+                                        style="background-image: url(/assets/images/Charlotte_Rampling_2016-2-220x220.jpg); width: 220px; height: 222px; border-radius: 200px;"
+                                        data-aos="slide-up" data-aos-duration="1000" data-aos-delay="500"
+                                        data-aos-easing="ease-in-out" data-aos-once="false">
                                     </div>
                                 </div>
                             </div>
                             <!-- person pictures end  -->
                         </div>
-                        <div class="col-md-1" data-aos="slide-up" data-aos-duration="1000" data-aos-easing="ease-in-out" data-aos-once="false">
+                        <div class="col-md-1" data-aos="slide-up" data-aos-duration="1000" data-aos-easing="ease-in-out"
+                            data-aos-once="false">
                             <div class="rotate-[270deg]">
                                 <div class="flex">
                                     <span class="font-bold text-c3" style="margin-top: -7px; margin-left: -130px;">LE
@@ -764,205 +943,211 @@
         </div>
     </section>
     <section>
-            <div class="bg-black">
-                <div class="container text-center">
-                    <div class="row">
-                        <div class="col-md-11 pt-[50px]">
-                            <span class="text-wite hover:text-gren roboto-font text-[16px] font-normal leading-[30px]  maxcomd:block maxcomd:pl-[31px]">Édition 2017</span>
-                            <span class="text-wite hover:text-gren roboto-font text-[16px] font-normal leading-[30px] ml-[30px] maxcomd:block">Édition
-                                2018</span>
-                            <span class="text-wite hover:text-gren roboto-font text-[16px] font-normal leading-[30px] ml-[30px] maxcomd:block">Mentions
-                                légales</span>
-                            <span
-                                class="text-wite hover:text-gren roboto-font text-[16px] font-normal leading-[30px] ml-[30px] maxcomd:block">Candidature</span>
-                        </div>
+        <div class="bg-black">
+            <div class="container text-center">
+                <div class="row">
+                    <div class="col-md-11 pt-[50px]">
+                        <span
+                            class="text-wite hover:text-gren roboto-font text-[16px] font-normal leading-[30px]  maxcomd:block maxcomd:pl-[31px] maxmd:pl-0">Édition
+                            2017</span>
+                        <span
+                            class="text-wite hover:text-gren roboto-font text-[16px] font-normal leading-[30px] ml-[30px] maxcomd:block maxmd:ml-0">Édition
+                            2018</span>
+                        <span
+                            class="text-wite hover:text-gren roboto-font text-[16px] font-normal leading-[30px] ml-[30px] maxcomd:block maxmd:ml-0">Mentions
+                            légales</span>
+                        <span
+                            class="text-wite hover:text-gren roboto-font text-[16px] font-normal leading-[30px] ml-[30px] maxcomd:block maxmd:ml-0">Candidature</span>
                     </div>
-                    <div class="row">
-                        <div class="partners-wrapper col-md-11 z-10 pt-[80px] maxcomd:pt-[50px] maxcomd:pb-[40px]">
-                            <a href="https://group.bnpparibas/"
-                                class="inline-block mr-[10px] maxcomd:pl-[140px] partner-link partner-name-bnp-paribas maxcomd:block">
-                                <svg class="w-[180px] md:w-[140px] fill-white hover:fill-[#A3D5BD] duration-500" id="Calque_1"
-                                    data-name="Calque 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 293.66 89.6">
-                                    <title>bnp</title>
-                                    <g>
-                                        <path
-                                            d="M70.25,18.48c.12,2,.24,7.2.24,9.08s0,7.53-.3,10l0,.2h9.07c4.45,0,9.17-1.39,9.17-5.34,0-2.48-1.79-4.31-5.15-5.31,2.49-.67,4.15-2.37,4.15-4.31,0-3.23-3.71-4.44-7.2-4.53h-10Zm7,2c3.78,0,5.16.8,5.16,2.86a2.17,2.17,0,0,1-.51,1.46A4.65,4.65,0,0,1,78,26h-.09l-1.06,2.75h1.06a6,6,0,0,1,4.83,1.74,2.76,2.76,0,0,1,.65,1.78c0,2.15-1.89,3.26-5.63,3.26-.63,0-1.65,0-2.29,0-.11-2.87-.15-6.76-.15-7.93,0-1.35.09-4.37.15-7A10.26,10.26,0,0,1,77.25,20.46Z" />
-                                        <path
-                                            d="M109.31,18.3H104.9l.18,4.92c.09,2.43.17,4.93.34,7.35h0a14.11,14.11,0,0,0-1.89-3.1c0-.07-4.59-7.12-6.18-9.12l0,0H92.18v.18c.16,2,.23,7.2.23,9.08s0,7.53-.24,10l0,.2h4.56v-.2c-.26-4.76-.26-9.56-.26-14.22h0a6.66,6.66,0,0,0,1.08,2.11c.06.13,7.91,11.56,8.3,12.22l0,.08h3.65v-.2c-.28-2.5-.3-8.3-.3-10s.13-7,.24-9.08l.06-.18Z" />
-                                        <path
-                                            d="M114.58,18.48c.18,2,.25,7.2.25,9.08s0,7.53-.27,10v.2H120l0-.2c-.18-1.8-.28-5.23-.3-7.86l1,.05.77,0c7.14,0,10.61-1.89,10.61-5.86,0-4.52-4.87-5.56-8.93-5.64h-8.55Zm6.69,2.17c2.54,0,4.32.47,5.16,1.53a2.68,2.68,0,0,1,.6,1.76c0,2.82-3.17,3.43-5.83,3.43l-1.08-.06-.44,0c0-.65,0-1.51,0-2.47,0-1.23,0-2.68.06-4A12.18,12.18,0,0,1,121.27,20.65Z" />
-                                        <path
-                                            d="M142.42,18.48c.17,2,.27,7.2.27,9.08s0,7.53-.3,10v.2h5.43l0-.2c-.17-1.8-.27-5.23-.27-7.86l1,.05.79,0c7.13,0,10.64-1.89,10.64-5.86,0-4.52-4.9-5.56-9-5.64h-8.53Zm6.68,2.17c2.55,0,4.32.47,5.17,1.53a2.65,2.65,0,0,1,.59,1.76c0,2.82-3.17,3.43-5.79,3.43L148,27.31l-.45,0c0-.65,0-1.52,0-2.47,0-1.24,0-2.68.05-4A11.41,11.41,0,0,1,149.1,20.65Z" />
-                                        <path
-                                            d="M167.18,18.3h-.07l0,.1c-1,2.77-7.52,17-8.55,19.15l-.09.24h4.62l0-.11c.41-1.34,1-2.84,1.55-4.45l3.86-.06,3.19,0,.67,0c.82,2.1,1.45,3.67,1.73,4.48l.05.08h5.35L170.84,18.3h-3.66ZM168.5,24c.43.93,1.55,3.52,2.81,6.61h-.44l-2.37,0-2.87,0C166.66,28.18,167.67,25.94,168.5,24Z" />
-                                        <path
-                                            d="M181.67,18.48c.16,2,.23,7.2.23,9.08s0,7.53-.3,10v.2h5.46l0-.2c-.29-2.52-.31-8.3-.31-10,0-1.35,0-4.37.18-6.82.41,0,1-.09,1.47-.09,2.52,0,4.31.47,5.14,1.53a2.63,2.63,0,0,1,.58,1.76c0,2.25-2.1,3.39-4.06,3.5a5.92,5.92,0,0,1-1.14-.06l-.38-.06.21.36c1.94,2.82,4.84,7.72,6,10l0,.08h5.83l-.14-.26c-.24-.33-4-5.92-5.65-8.31l-.14-.14c3-.9,4.43-2.57,4.43-5.13,0-4.49-4.87-5.56-9-5.64h-8.5Z" />
-                                        <path
-                                            d="M208.35,18.3h-5.2l0,.18c.13,2,.24,7.2.24,9.08,0,1.72,0,7.52-.27,10l0,.2h5.39l0-.2c-.21-2.52-.27-8.31-.27-10,0-1.88.13-7,.27-9.08V18.3Z" />
-                                        <path
-                                            d="M213.43,18.48c.16,2,.25,7.2.25,9.08s0,7.53-.27,10l0,.2h9.08c4.44,0,9.17-1.39,9.17-5.34,0-2.48-1.8-4.31-5.18-5.31,2.49-.67,4.17-2.37,4.17-4.31,0-3.23-3.71-4.44-7.17-4.53h-10Zm7,2h0c3.81,0,5.19.8,5.19,2.86a2.13,2.13,0,0,1-.52,1.46c-.69.87-2.15,1.32-3.94,1.21h-.09l-1,2.75h1a6,6,0,0,1,4.82,1.74,2.66,2.66,0,0,1,.67,1.78c0,2.15-1.9,3.26-5.66,3.26-.6,0-1.62,0-2.25,0-.16-2.87-.16-6.76-.16-7.93,0-1.35.05-4.37.16-7A9.76,9.76,0,0,1,220.43,20.46Z" />
-                                        <path
-                                            d="M245,18.3h-3.65l0,.09c-1.09,3-8,17.9-8.54,19.14l-.1.26h4.65l0-.12c.39-1.34.93-2.84,1.53-4.48l3.84-.06,3.2,0h.68c.84,2.1,1.46,3.69,1.74,4.48l.05.12h5.38L245.08,18.3ZM242.72,24c.44.91,1.55,3.5,2.81,6.6l-.43,0-2.38,0-2.86-.05C240.87,28.14,241.86,25.92,242.72,24Z" />
-                                        <path
-                                            d="M255.24,23.34c0,3.42,3.43,4.8,6.47,6.06,2.36.94,4.84,1.93,4.84,3.57a1.7,1.7,0,0,1-.37,1.2c-.57.67-1.72,1-3.55.85a16.61,16.61,0,0,1-6.15-1.7l-.9-.43v4.25l.61.15.36.06a23.76,23.76,0,0,0,5.5.8c5.72,0,9.14-2.28,9.14-6.06,0-3.55-3.53-4.92-6.64-6.17-2.3-.93-4.67-1.85-4.67-3.37,0-.44,0-1.72,3-1.72a15.69,15.69,0,0,1,5.52,1.35l1.1.46V18.38l-1.09-.2a25,25,0,0,0-4.88-.59C258.54,17.59,255.24,19.92,255.24,23.34Z" />
-                                    </g>
-                                    <g>
-                                        <path d="M2.16,70.61v12h5v2H0v-14Z" />
-                                        <path
-                                            d="M13.86,77c0-1-.66-1.4-1.56-1.4a1.57,1.57,0,0,0-1.72,1.64L8.66,77c.06-2.16,1.78-3.26,3.78-3.26,2.2,0,3.6,1.12,3.6,3v5.54c0,.5.24.72.58.72a1.78,1.78,0,0,0,1-.42l.14,1.58a2.64,2.64,0,0,1-1.84.7,1.6,1.6,0,0,1-1.78-1.48,3.89,3.89,0,0,1-3.06,1.48A2.63,2.63,0,0,1,8.28,82c0-2.72,2.6-3.84,5.58-3.82Zm0,2.86c-1.86-.06-3.42.62-3.42,2,0,.82.36,1.26,1.2,1.26a3.2,3.2,0,0,0,2.22-1.18Z" />
-                                        <path
-                                            d="M26.8,69.61v5.06a5.44,5.44,0,0,1,2.9-.94c1.72,0,3.54,1.08,3.54,5.46s-2,5.68-4.44,5.68a7.41,7.41,0,0,1-4.18-1.38V70Zm0,12.84a3.48,3.48,0,0,0,1.88.6c1.26,0,2.26-1,2.26-3.86s-1-3.5-2-3.5a3.74,3.74,0,0,0-2.14.74Z" />
-                                        <path
-                                            d="M40.44,77c0-1-.66-1.4-1.56-1.4a1.57,1.57,0,0,0-1.72,1.64L35.24,77C35.3,74.83,37,73.73,39,73.73c2.2,0,3.6,1.12,3.6,3v5.54c0,.5.24.72.58.72a1.78,1.78,0,0,0,1-.42l.14,1.58a2.64,2.64,0,0,1-1.84.7,1.6,1.6,0,0,1-1.78-1.48,3.89,3.89,0,0,1-3.06,1.48A2.63,2.63,0,0,1,34.86,82c0-2.72,2.6-3.84,5.58-3.82Zm0,2.86c-1.86-.06-3.42.62-3.42,2,0,.82.36,1.26,1.2,1.26a3.2,3.2,0,0,0,2.22-1.18Z" />
-                                        <path
-                                            d="M47.8,75a5.39,5.39,0,0,1,3.3-1.22c1.92,0,3.12,1.06,3.12,3.38v7.5H52V77.55c0-1.3-.44-1.76-1.66-1.76a4.61,4.61,0,0,0-2.36.78v8H45.84V74h2Z" />
-                                        <path
-                                            d="M62.76,83.71A3.89,3.89,0,0,1,60,84.88c-1.8,0-3.6-1.2-3.6-5.52,0-4.12,1.88-5.62,3.84-5.62a5.17,5.17,0,0,1,2.9,1.06V74h1.78V88.74l-2.16.48Zm0-7.24a3.9,3.9,0,0,0-2.1-.84c-1.18,0-2,1.12-2,3.74,0,2.84.9,3.68,1.82,3.68a3.23,3.23,0,0,0,2.26-1.3Z" />
-                                        <path
-                                            d="M69.86,74v7.28a1.8,1.8,0,0,0,3.6,0V74h2.18v7.22c0,2.48-1.68,3.66-4,3.66s-4-1.18-4-3.66V74Z" />
-                                        <path
-                                            d="M80.08,79.89c.1,2.46,1.1,3.16,2.6,3.16a4.77,4.77,0,0,0,2.78-1l.34,1.7a6.18,6.18,0,0,1-3.56,1.16c-2.64,0-4.44-1.58-4.44-5.56s1.58-5.58,4.3-5.58,3.84,1.8,3.84,4.46v1.7Zm3.76-1.7c0-1.8-.52-2.64-1.78-2.64s-1.86.78-2,2.64Z" />
-                                        <path
-                                            d="M99.68,83.35a4,4,0,0,1-3.06,1.52c-1.72,0-3.64-1.32-3.64-5.54s1.82-5.6,3.78-5.6a5.69,5.69,0,0,1,2.58.66V70l2.18-.4V82.29c0,.5.24.72.58.72a1.78,1.78,0,0,0,1-.42l.14,1.58a2.64,2.64,0,0,1-1.84.7A1.58,1.58,0,0,1,99.68,83.35Zm-.34-7.2a4.33,4.33,0,0,0-2.12-.6c-1,0-2,.66-2,3.68,0,2.6.88,3.64,1.84,3.64a3,3,0,0,0,2.24-1.2Z" />
-                                        <path d="M107.28,70.61l-1.44,4.74H104.1l1-4.74Z" />
-                                        <path
-                                            d="M111.52,74v7.28a1.8,1.8,0,0,0,3.6,0V74h2.18v7.22c0,2.48-1.68,3.66-4,3.66s-4-1.18-4-3.66V74Z" />
-                                        <path
-                                            d="M122.14,75a5.4,5.4,0,0,1,3.3-1.22c1.92,0,3.12,1.06,3.12,3.38v7.5h-2.18V77.55c0-1.3-.44-1.76-1.66-1.76a4.61,4.61,0,0,0-2.36.78v8h-2.18V74h2Z" />
-                                        <path
-                                            d="M138.78,75a5.24,5.24,0,0,1,3.2-1.22A2.6,2.6,0,0,1,144.46,75a6.15,6.15,0,0,1,3.4-1.24c1.9,0,3,1.06,3,3.38v7.5h-2.18V77.49c0-1.32-.52-1.7-1.6-1.7a4.58,4.58,0,0,0-2.2.78,5.82,5.82,0,0,1,.06.86v7.18h-2.18V77.79c0-1.5-.28-2-1.6-2a4.18,4.18,0,0,0-2.14.78v8h-2.18V74h2Z" />
-                                        <path
-                                            d="M161.8,79.35c0,3.68-1.52,5.52-4.38,5.52s-4.4-1.6-4.4-5.56,1.54-5.58,4.4-5.58S161.8,75.33,161.8,79.35Zm-6.54,0c0,2.88.72,3.74,2.16,3.74s2.14-.86,2.14-3.7-.7-3.8-2.14-3.8S155.26,76.39,155.26,79.31Z" />
-                                        <path
-                                            d="M166.16,75a5.4,5.4,0,0,1,3.3-1.22c1.92,0,3.12,1.06,3.12,3.38v7.5H170.4V77.55c0-1.3-.44-1.76-1.66-1.76a4.61,4.61,0,0,0-2.36.78v8H164.2V74h2Z" />
-                                        <path
-                                            d="M181.46,83.35a4,4,0,0,1-3.06,1.52c-1.72,0-3.64-1.32-3.64-5.54s1.82-5.6,3.78-5.6a5.69,5.69,0,0,1,2.58.66V70l2.18-.4V82.29c0,.5.24.72.58.72a1.78,1.78,0,0,0,1-.42l.14,1.58a2.64,2.64,0,0,1-1.84.7A1.58,1.58,0,0,1,181.46,83.35Zm-.34-7.2a4.33,4.33,0,0,0-2.12-.6c-1,0-2,.66-2,3.68,0,2.6.88,3.64,1.84,3.64a3,3,0,0,0,2.24-1.2Z" />
-                                        <path
-                                            d="M188.24,79.89c.1,2.46,1.1,3.16,2.6,3.16a4.77,4.77,0,0,0,2.78-1l.34,1.7a6.18,6.18,0,0,1-3.56,1.16c-2.64,0-4.44-1.58-4.44-5.56s1.58-5.58,4.3-5.58,3.84,1.8,3.84,4.46v1.7Zm3.76-1.7c0-1.8-.52-2.64-1.78-2.64s-1.86.78-2,2.64Z" />
-                                        <path
-                                            d="M207.5,83.71a3.89,3.89,0,0,1-2.76,1.16c-1.8,0-3.6-1.2-3.6-5.52,0-4.12,1.88-5.62,3.84-5.62a5.17,5.17,0,0,1,2.9,1.06V74h1.78V88.74l-2.16.48Zm0-7.24a3.9,3.9,0,0,0-2.1-.84c-1.18,0-2,1.12-2,3.74,0,2.84.9,3.68,1.82,3.68a3.23,3.23,0,0,0,2.26-1.3Z" />
-                                        <path
-                                            d="M214.6,74v7.28a1.8,1.8,0,0,0,3.6,0V74h2.18v7.22c0,2.48-1.68,3.66-4,3.66s-4-1.18-4-3.66V74Z" />
-                                        <path d="M225.44,70.21v2.36h-2.18V70.21Zm0,3.78V84.62h-2.18V74Z" />
-                                        <path
-                                            d="M239.1,77.57c-.06-1-.5-2-1.7-2s-1.92.76-1.92,3.76.9,3.74,2.48,3.74a4.43,4.43,0,0,0,2.68-1l.42,1.62a6,6,0,0,1-3.54,1.16c-2.76,0-4.32-1.74-4.32-5.58s1.34-5.56,4.28-5.56c2.56,0,3.54,1.58,3.58,3.64C240.4,77.43,239.76,77.49,239.1,77.57Z" />
-                                        <path
-                                            d="M245.6,74.79a5.13,5.13,0,0,1,3.08-1.06c1.92,0,3.12,1.06,3.12,3.38v7.5h-2.18V77.55c0-1.3-.44-1.76-1.66-1.76a4.61,4.61,0,0,0-2.36.78v8h-2.18V70l2.18-.4Z" />
-                                        <path
-                                            d="M259.58,77c0-1-.66-1.4-1.56-1.4a1.57,1.57,0,0,0-1.72,1.64l-1.92-.2c.06-2.16,1.78-3.26,3.78-3.26,2.2,0,3.6,1.12,3.6,3v5.54c0,.5.24.72.58.72a1.78,1.78,0,0,0,1-.42l.14,1.58a2.64,2.64,0,0,1-1.84.7,1.6,1.6,0,0,1-1.78-1.48,3.89,3.89,0,0,1-3.06,1.48A2.63,2.63,0,0,1,254,82c0-2.72,2.6-3.84,5.58-3.82Zm0,2.86c-1.86-.06-3.42.62-3.42,2,0,.82.36,1.26,1.2,1.26a3.2,3.2,0,0,0,2.22-1.18Z" />
-                                        <path
-                                            d="M266.94,75a5.39,5.39,0,0,1,3.3-1.22c1.92,0,3.12,1.06,3.12,3.38v7.5h-2.18V77.55c0-1.3-.44-1.76-1.66-1.76a4.61,4.61,0,0,0-2.36.78v8H265V74h2Z" />
-                                        <path
-                                            d="M284.54,76l-1.46-.08a3,3,0,0,1,.52,1.94,3.76,3.76,0,0,1-3.88,4,3.29,3.29,0,0,1-1-.12c-.4.28-.66.46-.66.82,0,1.12,6.44-.2,6.44,3.62,0,2.3-2.42,3.42-5,3.42s-4.38-1-4.38-2.66a2.91,2.91,0,0,1,1.82-2.52,1.56,1.56,0,0,1-.9-1.5A2.4,2.4,0,0,1,277.24,81a3.89,3.89,0,0,1-1.44-3.26,3.75,3.75,0,0,1,3.94-4,4.48,4.48,0,0,1,1.52.26h3.28ZM277.1,86.7c0,1,1.14,1.2,2.38,1.2s2.82-.54,2.82-1.46c0-1.3-1.8-1.28-3.44-1.5C278,85.33,277.1,85.94,277.1,86.7Zm2.62-11.2c-1.16,0-1.88.66-1.88,2.3s.72,2.3,1.88,2.3,1.88-.66,1.88-2.3S280.88,75.49,279.72,75.49Z" />
-                                        <path
-                                            d="M287.8,79.89c.1,2.46,1.1,3.16,2.6,3.16a4.76,4.76,0,0,0,2.78-1l.34,1.7A6.18,6.18,0,0,1,290,84.88c-2.64,0-4.44-1.58-4.44-5.56s1.58-5.58,4.3-5.58,3.84,1.8,3.84,4.46v1.7Zm3.76-1.7c0-1.8-.52-2.64-1.78-2.64s-1.86.78-2,2.64Z" />
-                                    </g>
+                </div>
+                <div class="row">
+                    <div class="partners-wrapper col-md-11 z-10 pt-[80px] maxcomd:pt-[50px] maxcomd:pb-[40px]">
+                        <a href="https://group.bnpparibas/"
+                            class="inline-block mr-[10px] maxcomd:pl-[140px] maxmd:pl-[100px] maxxl:pl-[70px] partner-link partner-name-bnp-paribas maxcomd:block">
+                            <svg class="w-[180px] md:w-[140px] fill-white hover:fill-[#A3D5BD] duration-500"
+                                id="Calque_1" data-name="Calque 1" xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 293.66 89.6">
+                                <title>bnp</title>
+                                <g>
                                     <path
-                                        d="M0,0V56.13H56.13V0ZM13.22,47.79a14.71,14.71,0,0,1-3.29-4.65,40.31,40.31,0,0,1-4.31-2.37,21,21,0,0,1,3.24-1.14,23.82,23.82,0,0,1,0-7.1,21.56,21.56,0,0,0,2.23,6.57c1.39-.26,2.59-.45,4.21-.69a15.56,15.56,0,0,0-1.89,3.63,13.77,13.77,0,0,0,5,3.07,20.57,20.57,0,0,1-5.51-.88A8.64,8.64,0,0,0,13.22,47.79Zm5.64-17.45c-.82-2-2-5.91-2-5.91-2.26,1.21-7.47,6.11-7.47,6.11a29.75,29.75,0,0,1,5.77-8.34c-1-1-3.62-1.52-5.54-1.6a21.57,21.57,0,0,1,5.51-1,28.76,28.76,0,0,1,3.15.06A15.77,15.77,0,0,1,23.61,17a11.5,11.5,0,0,0-1.53,3,25.53,25.53,0,0,1,9.25,3.33,30,30,0,0,0-8.52-.55,6.51,6.51,0,0,0-2,.35A35.52,35.52,0,0,0,18.86,30.34ZM29.78,46.65a10.56,10.56,0,0,1-2.35.15A22.22,22.22,0,0,1,21.65,49a21.64,21.64,0,0,0,3-2.34,11.92,11.92,0,0,1-3.11-1.08,16.5,16.5,0,0,0,4.79-.66A42.26,42.26,0,0,0,29,41.58c0,.86.08,1.51.15,2.27a28,28,0,0,0,4.32-2.53,39.49,39.49,0,0,1-4.14,3.75A13.26,13.26,0,0,0,29.78,46.65ZM47.4,12.49c.58,1.54-.8,10-1.93,12.24,0-3.54-.35-8-1.67-9.95-3.46,2-4.52,2.21-8.29,4.46a38.43,38.43,0,0,0,4.31-5.38,83.52,83.52,0,0,0-12.12,1.4,48.23,48.23,0,0,1,12.64-4c-.76-1.05-6.92-4.39-8.45-5,4.88.38,10.84,2.2,13.73,4A22.61,22.61,0,0,1,50,9.66,5.85,5.85,0,0,1,47.4,12.49Z" />
-                                </svg>
-                            </a>
-                            <a href="http://www.fisheyelagence.com/"
-                                class="inline-block mr-[10px] ml-[100px] md:ml-[10px] maxcomd:mt-[30px] maxcomd:pl-[140px] partner-link partner-name-fisheye maxcomd:block">
-                                <svg class="w-[113px] md:w-[100px] fill-white hover:fill-[#A3D5BD] duration-500"
-                                    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 80">
+                                        d="M70.25,18.48c.12,2,.24,7.2.24,9.08s0,7.53-.3,10l0,.2h9.07c4.45,0,9.17-1.39,9.17-5.34,0-2.48-1.79-4.31-5.15-5.31,2.49-.67,4.15-2.37,4.15-4.31,0-3.23-3.71-4.44-7.2-4.53h-10Zm7,2c3.78,0,5.16.8,5.16,2.86a2.17,2.17,0,0,1-.51,1.46A4.65,4.65,0,0,1,78,26h-.09l-1.06,2.75h1.06a6,6,0,0,1,4.83,1.74,2.76,2.76,0,0,1,.65,1.78c0,2.15-1.89,3.26-5.63,3.26-.63,0-1.65,0-2.29,0-.11-2.87-.15-6.76-.15-7.93,0-1.35.09-4.37.15-7A10.26,10.26,0,0,1,77.25,20.46Z" />
                                     <path
-                                        d="M64.37,54.53C67.16,65.86,110.43,71.4,106,41.37c-2.7-18.39-33-10-30.75-19.89,1.53-6.72,21.77-5.53,24.56,4.73a17,17,0,0,1,2.07-1.62c.77-.51,1.63-1,1.63-1C99.44,9.56,61.58,10,63.35,33.34,65.14,57,94.15,44.87,95,55c.58,6.59-21.83,7.84-26.47-3.82a8.52,8.52,0,0,1-2.11,2.14,11.15,11.15,0,0,1-2.08,1.25" />
+                                        d="M109.31,18.3H104.9l.18,4.92c.09,2.43.17,4.93.34,7.35h0a14.11,14.11,0,0,0-1.89-3.1c0-.07-4.59-7.12-6.18-9.12l0,0H92.18v.18c.16,2,.23,7.2.23,9.08s0,7.53-.24,10l0,.2h4.56v-.2c-.26-4.76-.26-9.56-.26-14.22h0a6.66,6.66,0,0,0,1.08,2.11c.06.13,7.91,11.56,8.3,12.22l0,.08h3.65v-.2c-.28-2.5-.3-8.3-.3-10s.13-7,.24-9.08l.06-.18Z" />
                                     <path
-                                        d="M158.46,61.78v-34c0-11.05-16.25-19.66-27-5.35V.19a93.1,93.1,0,0,1-11.69.93c-5,0-9.8-.45-9.8-.45s.47,5.84.47,15.64v28c0,9-.47,17.55-.47,17.55h22l-.47-17.55v-16c1.21-3.87,6.5-5.86,6.5-.47v34Z" />
+                                        d="M114.58,18.48c.18,2,.25,7.2.25,9.08s0,7.53-.27,10v.2H120l0-.2c-.18-1.8-.28-5.23-.3-7.86l1,.05.77,0c7.14,0,10.61-1.89,10.61-5.86,0-4.52-4.87-5.56-8.93-5.64h-8.55Zm6.69,2.17c2.54,0,4.32.47,5.16,1.53a2.68,2.68,0,0,1,.6,1.76c0,2.82-3.17,3.43-5.83,3.43l-1.08-.06-.44,0c0-.65,0-1.51,0-2.47,0-1.23,0-2.68.06-4A12.18,12.18,0,0,1,121.27,20.65Z" />
                                     <path
-                                        d="M180.83,39.55c.32-10.91,2.52-20.4,8.19-20.4,6,0,6.82,12.25,6.82,20.4Zm4.44-25.37c-13.28.49-22.8,9.7-22.8,25.31S174.54,63.38,188,63.38c8.42,0,16.34-3.77,19.13-11.85a13.07,13.07,0,0,1-2.57-.77,12.32,12.32,0,0,1-1.67-.86c-4.43,13.57-21.47,13.49-22.08-5.44h26.95c4.45-16.18-5.94-30.89-22.48-30.27" />
+                                        d="M142.42,18.48c.17,2,.27,7.2.27,9.08s0,7.53-.3,10v.2h5.43l0-.2c-.17-1.8-.27-5.23-.27-7.86l1,.05.79,0c7.13,0,10.64-1.89,10.64-5.86,0-4.52-4.9-5.56-9-5.64h-8.53Zm6.68,2.17c2.55,0,4.32.47,5.17,1.53a2.65,2.65,0,0,1,.59,1.76c0,2.82-3.17,3.43-5.79,3.43L148,27.31l-.45,0c0-.65,0-1.52,0-2.47,0-1.24,0-2.68.05-4A11.41,11.41,0,0,1,149.1,20.65Z" />
                                     <path
-                                        d="M272,39.55c.32-10.91,2.52-20.4,8.19-20.4,6,0,6.82,12.25,6.82,20.4Zm4.44-25.37c-13.28.49-22.8,9.7-22.8,25.31s12.08,23.88,25.53,23.88c8.42,0,16.35-3.77,19.13-11.85a13.09,13.09,0,0,1-2.57-.77,12.38,12.38,0,0,1-1.67-.86c-4.43,13.57-21.47,13.49-22.08-5.44H299c4.45-16.18-5.94-30.89-22.48-30.27" />
+                                        d="M167.18,18.3h-.07l0,.1c-1,2.77-7.52,17-8.55,19.15l-.09.24h4.62l0-.11c.41-1.34,1-2.84,1.55-4.45l3.86-.06,3.19,0,.67,0c.82,2.1,1.45,3.67,1.73,4.48l.05.08h5.35L170.84,18.3h-3.66ZM168.5,24c.43.93,1.55,3.52,2.81,6.61h-.44l-2.37,0-2.87,0C166.66,28.18,167.67,25.94,168.5,24Z" />
                                     <path
-                                        d="M237.46,54.85h0ZM238.78,67l13.91-41.82A91.76,91.76,0,0,1,256.86,15h-7.19c-1.12,5.79-5.63,17.16-9,28.42l-.3,1-12.74-29.6s-5,.37-10.66.37a96.58,96.58,0,0,1-10.67-.62l18.25,44.57c6.53-.45,9.84,3.26,9.93,5.43L234.08,66c-1,3.29-3,10.86-10.08,10.86-8.45,0-5.63-9.53-5.63-9.53a20.11,20.11,0,0,1-3.08-.81,7.17,7.17,0,0,1-2.09-1.1c-1.4,3.85-1.76,14.35,11.26,14.35,9.18,0,12.3-6.85,14.26-12.65h0l0-.14v0" />
+                                        d="M181.67,18.48c.16,2,.23,7.2.23,9.08s0,7.53-.3,10v.2h5.46l0-.2c-.29-2.52-.31-8.3-.31-10,0-1.35,0-4.37.18-6.82.41,0,1-.09,1.47-.09,2.52,0,4.31.47,5.14,1.53a2.63,2.63,0,0,1,.58,1.76c0,2.25-2.1,3.39-4.06,3.5a5.92,5.92,0,0,1-1.14-.06l-.38-.06.21.36c1.94,2.82,4.84,7.72,6,10l0,.08h5.83l-.14-.26c-.24-.33-4-5.92-5.65-8.31l-.14-.14c3-.9,4.43-2.57,4.43-5.13,0-4.49-4.87-5.56-9-5.64h-8.5Z" />
                                     <path
-                                        d="M47,25.25c8.17,0,14.8-4.78,14.8-10.68C61.77-3.06,6.91-8.9,6.91,24.71v4.08H.47A40.19,40.19,0,0,1,0,34.55H6.91l0,9.51s.18,12.82-.47,17.55H28.92c-.57-4.85-.5-17.55-.5-17.55V34.56h8v9.51s.11,8.86-.3,17.55H58.82a156.25,156.25,0,0,1-.95-17.55V30.67c-32.48,7.14-38-16.5-24.73-24.75,1.46-.91,1.92-.72,2.28-.51.57.34.31,1.08-.34,2h0c-1.18,1.53-2.91,4.18-2.91,7.2,0,5.9,6.62,10.68,14.8,10.68" />
-                                </svg>
-                            </a>
-                            <a href="https://www.rencontres-arles.com/"
-                                class="inline-block ml-[80px] maxcomd:ml-0 maxcomd:mt-[30px] maxcomd:pl-[140px] partner-link partner-name-arles-les-rencontres-de-la-photographie maxcomd:block">
-                                <svg class="w-[140px] md:w-[120px] fill-white hover:fill-[#A3D5BD] duration-500"
-                                    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 260 83">
+                                        d="M208.35,18.3h-5.2l0,.18c.13,2,.24,7.2.24,9.08,0,1.72,0,7.52-.27,10l0,.2h5.39l0-.2c-.21-2.52-.27-8.31-.27-10,0-1.88.13-7,.27-9.08V18.3Z" />
                                     <path
-                                        d="M11.1.22,0,35.53v3.62H8.93l2.56-9.06H22l2.72,9.06H35L22.44.22ZM13.54,21.8l3-10.79h.22l3,10.79Z" />
-                                    <polygon
-                                        points="108.97 39.15 139.4 39.15 139.4 30.86 118.54 30.86 118.54 23.41 129.72 23.41 129.72 15.18 118.54 15.18 118.54 8.51 139.4 8.51 139.4 0.22 108.97 0.22 108.97 39.15" />
-                                    <polygon
-                                        points="89.01 0.22 79.44 0.22 79.44 39.15 105.25 39.15 105.25 30.86 89.01 30.86 89.01 0.22" />
+                                        d="M213.43,18.48c.16,2,.25,7.2.25,9.08s0,7.53-.27,10l0,.2h9.08c4.44,0,9.17-1.39,9.17-5.34,0-2.48-1.8-4.31-5.18-5.31,2.49-.67,4.17-2.37,4.17-4.31,0-3.23-3.71-4.44-7.17-4.53h-10Zm7,2h0c3.81,0,5.19.8,5.19,2.86a2.13,2.13,0,0,1-.52,1.46c-.69.87-2.15,1.32-3.94,1.21h-.09l-1,2.75h1a6,6,0,0,1,4.82,1.74,2.66,2.66,0,0,1,.67,1.78c0,2.15-1.9,3.26-5.66,3.26-.6,0-1.62,0-2.25,0-.16-2.87-.16-6.76-.16-7.93,0-1.35.05-4.37.16-7A9.76,9.76,0,0,1,220.43,20.46Z" />
                                     <path
-                                        d="M70.77,12.51C70.77,5.67,65.21.22,56.59.22H40.35V39.15h9.57V25.52h4.61l7.34,13.62H72.66l-9-15.57A11.53,11.53,0,0,0,70.77,12.51ZM55.31,17.07H49.91V8.51h5.39c3.89,0,5.5,1.56,5.5,4.23S59.2,17.07,55.31,17.07Z" />
+                                        d="M245,18.3h-3.65l0,.09c-1.09,3-8,17.9-8.54,19.14l-.1.26h4.65l0-.12c.39-1.34.93-2.84,1.53-4.48l3.84-.06,3.2,0h.68c.84,2.1,1.46,3.69,1.74,4.48l.05.12h5.38L245.08,18.3ZM242.72,24c.44.91,1.55,3.5,2.81,6.6l-.43,0-2.38,0-2.86-.05C240.87,28.14,241.86,25.92,242.72,24Z" />
                                     <path
-                                        d="M164.09,15.9l-4.56-2c-2.39-1.06-2.78-2.17-2.78-3.11,0-1.17,1.06-2.67,3.67-2.67A11.87,11.87,0,0,1,168.76,12L174,5.23a17.88,17.88,0,0,0-8.82-5h-9.93c-5.21,1.53-8.89,5.66-8.89,10.86,0,4.84,2.95,8.67,8.84,11.23l4.45,1.95c2.78,1.22,4.06,2.33,4.06,3.95s-1.33,3.06-4,3.06a14.64,14.64,0,0,1-9.62-4.17L145,34a21.7,21.7,0,0,0,14.9,5.84c9.34,0,14.24-6.06,14.24-12C174.1,22.52,171.42,19.13,164.09,15.9Z" />
+                                        d="M255.24,23.34c0,3.42,3.43,4.8,6.47,6.06,2.36.94,4.84,1.93,4.84,3.57a1.7,1.7,0,0,1-.37,1.2c-.57.67-1.72,1-3.55.85a16.61,16.61,0,0,1-6.15-1.7l-.9-.43v4.25l.61.15.36.06a23.76,23.76,0,0,0,5.5.8c5.72,0,9.14-2.28,9.14-6.06,0-3.55-3.53-4.92-6.64-6.17-2.3-.93-4.67-1.85-4.67-3.37,0-.44,0-1.72,3-1.72a15.69,15.69,0,0,1,5.52,1.35l1.1.46V18.38l-1.09-.2a25,25,0,0,0-4.88-.59C258.54,17.59,255.24,19.92,255.24,23.34Z" />
+                                </g>
+                                <g>
+                                    <path d="M2.16,70.61v12h5v2H0v-14Z" />
                                     <path
-                                        d="M30.51,68.39H24.69V82.55h5.83c4.67,0,7.46-2.87,7.46-7.08S35.18,68.39,30.51,68.39Zm-.22,10.39H28.75V72.15h1.54a3.32,3.32,0,1,1,0,6.63Z" />
+                                        d="M13.86,77c0-1-.66-1.4-1.56-1.4a1.57,1.57,0,0,0-1.72,1.64L8.66,77c.06-2.16,1.78-3.26,3.78-3.26,2.2,0,3.6,1.12,3.6,3v5.54c0,.5.24.72.58.72a1.78,1.78,0,0,0,1-.42l.14,1.58a2.64,2.64,0,0,1-1.84.7,1.6,1.6,0,0,1-1.78-1.48,3.89,3.89,0,0,1-3.06,1.48A2.63,2.63,0,0,1,8.28,82c0-2.72,2.6-3.84,5.58-3.82Zm0,2.86c-1.86-.06-3.42.62-3.42,2,0,.82.36,1.26,1.2,1.26a3.2,3.2,0,0,0,2.22-1.18Z" />
                                     <path
-                                        d="M75,68.39,70.73,82.55H75l.67-2.37h3.54L80,82.55h4.39L80.1,68.39Zm1.46,8.23.95-3.52h.08l.95,3.52Z" />
-                                    <polygon
-                                        points="64.08 68.39 60.02 68.39 60.02 82.55 69.91 82.55 69.91 78.86 64.08 78.86 64.08 68.39" />
-                                    <polygon
-                                        points="40.69 82.55 52.01 82.55 52.01 78.99 44.75 78.99 44.75 77.29 48.43 77.29 48.43 73.57 44.75 73.57 44.75 71.93 52.01 71.93 52.01 68.39 40.69 68.39 40.69 82.55" />
+                                        d="M26.8,69.61v5.06a5.44,5.44,0,0,1,2.9-.94c1.72,0,3.54,1.08,3.54,5.46s-2,5.68-4.44,5.68a7.41,7.41,0,0,1-4.18-1.38V70Zm0,12.84a3.48,3.48,0,0,0,1.88.6c1.26,0,2.26-1,2.26-3.86s-1-3.5-2-3.5a3.74,3.74,0,0,0-2.14.74Z" />
                                     <path
-                                        d="M172.94,72a2.85,2.85,0,0,1,2.83,2l4.61,0a7.2,7.2,0,0,0-7.48-5.88,7.32,7.32,0,0,0-7.6,7.32,7,7,0,0,0,7.12,7.32,5.77,5.77,0,0,0,4.75-2.23v2H180V74.82H172.7v2.89h3a3.5,3.5,0,0,1-2.77,1.35,3.57,3.57,0,0,1,0-7.12Z" />
+                                        d="M40.44,77c0-1-.66-1.4-1.56-1.4a1.57,1.57,0,0,0-1.72,1.64L35.24,77C35.3,74.83,37,73.73,39,73.73c2.2,0,3.6,1.12,3.6,3v5.54c0,.5.24.72.58.72a1.78,1.78,0,0,0,1-.42l.14,1.58a2.64,2.64,0,0,1-1.84.7,1.6,1.6,0,0,1-1.78-1.48,3.89,3.89,0,0,1-3.06,1.48A2.63,2.63,0,0,1,34.86,82c0-2.72,2.6-3.84,5.58-3.82Zm0,2.86c-1.86-.06-3.42.62-3.42,2,0,.82.36,1.26,1.2,1.26a3.2,3.2,0,0,0,2.22-1.18Z" />
                                     <path
-                                        d="M217.57,68.39h-5.36V82.55h4V78.6h1.32c3.72,0,5.6-2.41,5.6-5.18S221.29,68.39,217.57,68.39ZM217.09,75h-.83V71.93h.83c1.05,0,1.9.44,1.9,1.56S218.14,75,217.09,75Z" />
+                                        d="M47.8,75a5.39,5.39,0,0,1,3.3-1.22c1.92,0,3.12,1.06,3.12,3.38v7.5H52V77.55c0-1.3-.44-1.76-1.66-1.76a4.61,4.61,0,0,0-2.36.78v8H45.84V74h2Z" />
                                     <path
-                                        d="M200.65,68.39l-4.27,14.16h4.31l.67-2.37h3.54l.73,2.37H210l-4.27-14.16Zm1.46,8.23,1-3.52h.08l.95,3.52Z" />
-                                    <polygon
-                                        points="233.67 73.57 229.3 73.57 229.3 68.39 225.24 68.39 225.24 82.55 229.3 82.55 229.3 77.29 233.67 77.29 233.67 82.55 237.73 82.55 237.73 68.39 233.67 68.39 233.67 73.57" />
-                                    <polygon
-                                        points="260 71.93 260 68.39 248.67 68.39 248.67 82.55 260 82.55 260 78.99 252.74 78.99 252.74 77.29 256.42 77.29 256.42 73.57 252.74 73.57 252.74 71.93 260 71.93" />
-                                    <rect x="241.17" y="68.39" width="4.06" height="14.16" />
+                                        d="M62.76,83.71A3.89,3.89,0,0,1,60,84.88c-1.8,0-3.6-1.2-3.6-5.52,0-4.12,1.88-5.62,3.84-5.62a5.17,5.17,0,0,1,2.9,1.06V74h1.78V88.74l-2.16.48Zm0-7.24a3.9,3.9,0,0,0-2.1-.84c-1.18,0-2,1.12-2,3.74,0,2.84.9,3.68,1.82,3.68a3.23,3.23,0,0,0,2.26-1.3Z" />
                                     <path
-                                        d="M194.68,73.08c0-2.51-2-4.69-5.44-4.69h-6.53V82.55h4.06V77.83h1.31l2.53,4.71h4.55l-3.09-5.3A4.3,4.3,0,0,0,194.68,73.08Zm-5.8,1.31h-2.1V71.93h2.1c1.17,0,1.64.53,1.64,1.23S190.05,74.4,188.88,74.4Z" />
+                                        d="M69.86,74v7.28a1.8,1.8,0,0,0,3.6,0V74h2.18v7.22c0,2.48-1.68,3.66-4,3.66s-4-1.18-4-3.66V74Z" />
                                     <path
-                                        d="M127.12,68.15a7.32,7.32,0,1,0,7.46,7.32A7.25,7.25,0,0,0,127.12,68.15Zm0,10.84c-1.9,0-3.12-1.5-3.12-3.52S125.22,72,127.12,72s3.11,1.48,3.11,3.52S129,79,127.12,79Z" />
+                                        d="M80.08,79.89c.1,2.46,1.1,3.16,2.6,3.16a4.77,4.77,0,0,0,2.78-1l.34,1.7a6.18,6.18,0,0,1-3.56,1.16c-2.64,0-4.44-1.58-4.44-5.56s1.58-5.58,4.3-5.58,3.84,1.8,3.84,4.46v1.7Zm3.76-1.7c0-1.8-.52-2.64-1.78-2.64s-1.86.78-2,2.64Z" />
                                     <path
-                                        d="M96.42,68.39H91.06V82.55h4V78.6h1.32c3.72,0,5.6-2.41,5.6-5.18S100.14,68.39,96.42,68.39ZM95.94,75H95.1V71.93h.83c1.05,0,1.9.44,1.9,1.56S97,75,95.94,75Z" />
-                                    <polygon
-                                        points="135.47 72.07 139.45 72.07 139.45 82.55 143.6 82.55 143.6 72.07 147.58 72.07 147.58 68.39 135.47 68.39 135.47 72.07" />
-                                    <polygon
-                                        points="112.92 73.57 108.55 73.57 108.55 68.39 104.49 68.39 104.49 82.55 108.55 82.55 108.55 77.29 112.92 77.29 112.92 82.55 116.98 82.55 116.98 68.39 112.92 68.39 112.92 73.57" />
+                                        d="M99.68,83.35a4,4,0,0,1-3.06,1.52c-1.72,0-3.64-1.32-3.64-5.54s1.82-5.6,3.78-5.6a5.69,5.69,0,0,1,2.58.66V70l2.18-.4V82.29c0,.5.24.72.58.72a1.78,1.78,0,0,0,1-.42l.14,1.58a2.64,2.64,0,0,1-1.84.7A1.58,1.58,0,0,1,99.68,83.35Zm-.34-7.2a4.33,4.33,0,0,0-2.12-.6c-1,0-2,.66-2,3.68,0,2.6.88,3.64,1.84,3.64a3,3,0,0,0,2.24-1.2Z" />
+                                    <path d="M107.28,70.61l-1.44,4.74H104.1l1-4.74Z" />
                                     <path
-                                        d="M155.93,68.15a7.32,7.32,0,1,0,7.46,7.32A7.25,7.25,0,0,0,155.93,68.15Zm0,10.84c-1.9,0-3.11-1.5-3.11-3.52S154,72,155.93,72,159,73.43,159,75.47,157.83,79,155.93,79Z" />
-                                    <polygon
-                                        points="198.52 60.79 191.26 60.79 191.26 59.09 194.94 59.09 194.94 55.37 191.26 55.37 191.26 53.73 198.52 53.73 198.52 50.19 187.2 50.19 187.2 64.35 198.52 64.35 198.52 60.79" />
+                                        d="M111.52,74v7.28a1.8,1.8,0,0,0,3.6,0V74h2.18v7.22c0,2.48-1.68,3.66-4,3.66s-4-1.18-4-3.66V74Z" />
                                     <path
-                                        d="M135.85,64.59a7.32,7.32,0,1,0-7.46-7.32A7.25,7.25,0,0,0,135.85,64.59Zm0-10.84c1.9,0,3.11,1.48,3.11,3.52s-1.21,3.52-3.11,3.52-3.11-1.5-3.11-3.52S134,53.75,135.85,53.75Z" />
+                                        d="M122.14,75a5.4,5.4,0,0,1,3.3-1.22c1.92,0,3.12,1.06,3.12,3.38v7.5h-2.18V77.55c0-1.3-.44-1.76-1.66-1.76a4.61,4.61,0,0,0-2.36.78v8h-2.18V74h2Z" />
                                     <path
-                                        d="M119.74,64.59a7.27,7.27,0,0,0,7.34-5.92h-4.53a2.84,2.84,0,0,1-2.81,2.12c-1.9,0-3.12-1.5-3.12-3.52s1.21-3.52,3.12-3.52a2.91,2.91,0,0,1,2.79,2.08h4.55A7.11,7.11,0,0,0,119.74,50a7.32,7.32,0,1,0,0,14.64Z" />
-                                    <polygon
-                                        points="149.2 57.07 152.78 64.35 157.67 64.35 157.67 50.19 153.65 50.19 153.65 57.49 150.09 50.19 145.18 50.19 145.18 64.35 149.2 64.35 149.2 57.07" />
-                                    <polygon
-                                        points="163.31 64.35 167.46 64.35 167.46 53.87 171.44 53.87 171.44 50.19 159.33 50.19 159.33 53.87 163.31 53.87 163.31 64.35" />
-                                    <polygon
-                                        points="101.54 57.07 105.11 64.35 110.01 64.35 110.01 50.19 105.98 50.19 105.98 57.49 102.42 50.19 97.51 50.19 97.51 64.35 101.54 64.35 101.54 57.07" />
+                                        d="M138.78,75a5.24,5.24,0,0,1,3.2-1.22A2.6,2.6,0,0,1,144.46,75a6.15,6.15,0,0,1,3.4-1.24c1.9,0,3,1.06,3,3.38v7.5h-2.18V77.49c0-1.32-.52-1.7-1.6-1.7a4.58,4.58,0,0,0-2.2.78,5.82,5.82,0,0,1,.06.86v7.18h-2.18V77.79c0-1.5-.28-2-1.6-2a4.18,4.18,0,0,0-2.14.78v8h-2.18V74h2Z" />
                                     <path
-                                        d="M57.57,55.89l-2.32-.81c-.69-.24-.77-.62-.77-.85s.34-.73,1-.73a4.77,4.77,0,0,1,3.14,1.23l2.22-2.81a7.78,7.78,0,0,0-5.42-2c-3.36,0-5.36,2.08-5.36,4.35a4.34,4.34,0,0,0,3.24,4.17l2.06.71c1,.35,1.17.61,1.17,1s-.4.83-1.21.83a6.07,6.07,0,0,1-3.64-1.66l-2.26,3a8.71,8.71,0,0,0,6.09,2.24C58.68,64.59,61,62.77,61,60,61,58.14,59.8,56.66,57.57,55.89Z" />
+                                        d="M161.8,79.35c0,3.68-1.52,5.52-4.38,5.52s-4.4-1.6-4.4-5.56,1.54-5.58,4.4-5.58S161.8,75.33,161.8,79.35Zm-6.54,0c0,2.88.72,3.74,2.16,3.74s2.14-.86,2.14-3.7-.7-3.8-2.14-3.8S155.26,76.39,155.26,79.31Z" />
                                     <path
-                                        d="M208.53,55.89l-2.32-.81c-.69-.24-.77-.62-.77-.85s.34-.73,1-.73a4.77,4.77,0,0,1,3.14,1.23l2.22-2.81a7.79,7.79,0,0,0-5.42-2c-3.36,0-5.36,2.08-5.36,4.35a4.33,4.33,0,0,0,3.23,4.17l2.06.71c1,.35,1.17.61,1.17,1s-.4.83-1.21.83a6.05,6.05,0,0,1-3.64-1.66l-2.27,3a8.72,8.72,0,0,0,6.09,2.24c3.15,0,5.44-1.82,5.44-4.57C211.93,58.14,210.76,56.66,208.53,55.89Z" />
+                                        d="M166.16,75a5.4,5.4,0,0,1,3.3-1.22c1.92,0,3.12,1.06,3.12,3.38v7.5H170.4V77.55c0-1.3-.44-1.76-1.66-1.76a4.61,4.61,0,0,0-2.36.78v8H164.2V74h2Z" />
                                     <path
-                                        d="M182.46,59a4.3,4.3,0,0,0,2.61-4.17c0-2.51-2-4.69-5.44-4.69H173.1V64.35h4.06V59.63h1.32L181,64.35h4.55Zm-3.2-2.85h-2.1V53.73h2.1c1.17,0,1.64.53,1.64,1.23S180.44,56.2,179.27,56.2Z" />
-                                    <polygon
-                                        points="34.58 60.66 28.75 60.66 28.75 50.19 24.69 50.19 24.69 64.35 34.58 64.35 34.58 60.66" />
-                                    <polygon
-                                        points="94.96 60.79 87.7 60.79 87.7 59.09 91.39 59.09 91.39 55.37 87.7 55.37 87.7 53.73 94.96 53.73 94.96 50.19 83.64 50.19 83.64 64.35 94.96 64.35 94.96 60.79" />
+                                        d="M181.46,83.35a4,4,0,0,1-3.06,1.52c-1.72,0-3.64-1.32-3.64-5.54s1.82-5.6,3.78-5.6a5.69,5.69,0,0,1,2.58.66V70l2.18-.4V82.29c0,.5.24.72.58.72a1.78,1.78,0,0,0,1-.42l.14,1.58a2.64,2.64,0,0,1-1.84.7A1.58,1.58,0,0,1,181.46,83.35Zm-.34-7.2a4.33,4.33,0,0,0-2.12-.6c-1,0-2,.66-2,3.68,0,2.6.88,3.64,1.84,3.64a3,3,0,0,0,2.24-1.2Z" />
                                     <path
-                                        d="M72.8,59.63h1.32l2.53,4.71h4.55L78.1,59a4.3,4.3,0,0,0,2.61-4.17c0-2.51-2-4.69-5.44-4.69H68.73V64.35H72.8V59.63Zm0-5.9h2.1c1.17,0,1.64.53,1.64,1.23s-.47,1.23-1.64,1.23H72.8Z" />
-                                    <polygon
-                                        points="47.56 60.79 40.3 60.79 40.3 59.09 43.98 59.09 43.98 55.37 40.3 55.37 40.3 53.73 47.56 53.73 47.56 50.19 36.24 50.19 36.24 64.35 47.56 64.35 47.56 60.79" />
-                                    <rect x="221.44" y="0.24" width="38.56" height="9" />
-                                </svg>
-                            </a>
-                        </div>
-                        <div class="col-md-1">
-                            <span>
-                                <button class="bg-wite hover:bg-gren 2xl:ml-[-100px] xl:ml-[-200px] md:hidden" onclick="topFunction()" id="myBtn" title="Go to top"><i
-                                        class="fa-solid fa-arrow-up fa-2xl fttps"></i></button>
-                            </span>
-                        </div>
+                                        d="M188.24,79.89c.1,2.46,1.1,3.16,2.6,3.16a4.77,4.77,0,0,0,2.78-1l.34,1.7a6.18,6.18,0,0,1-3.56,1.16c-2.64,0-4.44-1.58-4.44-5.56s1.58-5.58,4.3-5.58,3.84,1.8,3.84,4.46v1.7Zm3.76-1.7c0-1.8-.52-2.64-1.78-2.64s-1.86.78-2,2.64Z" />
+                                    <path
+                                        d="M207.5,83.71a3.89,3.89,0,0,1-2.76,1.16c-1.8,0-3.6-1.2-3.6-5.52,0-4.12,1.88-5.62,3.84-5.62a5.17,5.17,0,0,1,2.9,1.06V74h1.78V88.74l-2.16.48Zm0-7.24a3.9,3.9,0,0,0-2.1-.84c-1.18,0-2,1.12-2,3.74,0,2.84.9,3.68,1.82,3.68a3.23,3.23,0,0,0,2.26-1.3Z" />
+                                    <path
+                                        d="M214.6,74v7.28a1.8,1.8,0,0,0,3.6,0V74h2.18v7.22c0,2.48-1.68,3.66-4,3.66s-4-1.18-4-3.66V74Z" />
+                                    <path d="M225.44,70.21v2.36h-2.18V70.21Zm0,3.78V84.62h-2.18V74Z" />
+                                    <path
+                                        d="M239.1,77.57c-.06-1-.5-2-1.7-2s-1.92.76-1.92,3.76.9,3.74,2.48,3.74a4.43,4.43,0,0,0,2.68-1l.42,1.62a6,6,0,0,1-3.54,1.16c-2.76,0-4.32-1.74-4.32-5.58s1.34-5.56,4.28-5.56c2.56,0,3.54,1.58,3.58,3.64C240.4,77.43,239.76,77.49,239.1,77.57Z" />
+                                    <path
+                                        d="M245.6,74.79a5.13,5.13,0,0,1,3.08-1.06c1.92,0,3.12,1.06,3.12,3.38v7.5h-2.18V77.55c0-1.3-.44-1.76-1.66-1.76a4.61,4.61,0,0,0-2.36.78v8h-2.18V70l2.18-.4Z" />
+                                    <path
+                                        d="M259.58,77c0-1-.66-1.4-1.56-1.4a1.57,1.57,0,0,0-1.72,1.64l-1.92-.2c.06-2.16,1.78-3.26,3.78-3.26,2.2,0,3.6,1.12,3.6,3v5.54c0,.5.24.72.58.72a1.78,1.78,0,0,0,1-.42l.14,1.58a2.64,2.64,0,0,1-1.84.7,1.6,1.6,0,0,1-1.78-1.48,3.89,3.89,0,0,1-3.06,1.48A2.63,2.63,0,0,1,254,82c0-2.72,2.6-3.84,5.58-3.82Zm0,2.86c-1.86-.06-3.42.62-3.42,2,0,.82.36,1.26,1.2,1.26a3.2,3.2,0,0,0,2.22-1.18Z" />
+                                    <path
+                                        d="M266.94,75a5.39,5.39,0,0,1,3.3-1.22c1.92,0,3.12,1.06,3.12,3.38v7.5h-2.18V77.55c0-1.3-.44-1.76-1.66-1.76a4.61,4.61,0,0,0-2.36.78v8H265V74h2Z" />
+                                    <path
+                                        d="M284.54,76l-1.46-.08a3,3,0,0,1,.52,1.94,3.76,3.76,0,0,1-3.88,4,3.29,3.29,0,0,1-1-.12c-.4.28-.66.46-.66.82,0,1.12,6.44-.2,6.44,3.62,0,2.3-2.42,3.42-5,3.42s-4.38-1-4.38-2.66a2.91,2.91,0,0,1,1.82-2.52,1.56,1.56,0,0,1-.9-1.5A2.4,2.4,0,0,1,277.24,81a3.89,3.89,0,0,1-1.44-3.26,3.75,3.75,0,0,1,3.94-4,4.48,4.48,0,0,1,1.52.26h3.28ZM277.1,86.7c0,1,1.14,1.2,2.38,1.2s2.82-.54,2.82-1.46c0-1.3-1.8-1.28-3.44-1.5C278,85.33,277.1,85.94,277.1,86.7Zm2.62-11.2c-1.16,0-1.88.66-1.88,2.3s.72,2.3,1.88,2.3,1.88-.66,1.88-2.3S280.88,75.49,279.72,75.49Z" />
+                                    <path
+                                        d="M287.8,79.89c.1,2.46,1.1,3.16,2.6,3.16a4.76,4.76,0,0,0,2.78-1l.34,1.7A6.18,6.18,0,0,1,290,84.88c-2.64,0-4.44-1.58-4.44-5.56s1.58-5.58,4.3-5.58,3.84,1.8,3.84,4.46v1.7Zm3.76-1.7c0-1.8-.52-2.64-1.78-2.64s-1.86.78-2,2.64Z" />
+                                </g>
+                                <path
+                                    d="M0,0V56.13H56.13V0ZM13.22,47.79a14.71,14.71,0,0,1-3.29-4.65,40.31,40.31,0,0,1-4.31-2.37,21,21,0,0,1,3.24-1.14,23.82,23.82,0,0,1,0-7.1,21.56,21.56,0,0,0,2.23,6.57c1.39-.26,2.59-.45,4.21-.69a15.56,15.56,0,0,0-1.89,3.63,13.77,13.77,0,0,0,5,3.07,20.57,20.57,0,0,1-5.51-.88A8.64,8.64,0,0,0,13.22,47.79Zm5.64-17.45c-.82-2-2-5.91-2-5.91-2.26,1.21-7.47,6.11-7.47,6.11a29.75,29.75,0,0,1,5.77-8.34c-1-1-3.62-1.52-5.54-1.6a21.57,21.57,0,0,1,5.51-1,28.76,28.76,0,0,1,3.15.06A15.77,15.77,0,0,1,23.61,17a11.5,11.5,0,0,0-1.53,3,25.53,25.53,0,0,1,9.25,3.33,30,30,0,0,0-8.52-.55,6.51,6.51,0,0,0-2,.35A35.52,35.52,0,0,0,18.86,30.34ZM29.78,46.65a10.56,10.56,0,0,1-2.35.15A22.22,22.22,0,0,1,21.65,49a21.64,21.64,0,0,0,3-2.34,11.92,11.92,0,0,1-3.11-1.08,16.5,16.5,0,0,0,4.79-.66A42.26,42.26,0,0,0,29,41.58c0,.86.08,1.51.15,2.27a28,28,0,0,0,4.32-2.53,39.49,39.49,0,0,1-4.14,3.75A13.26,13.26,0,0,0,29.78,46.65ZM47.4,12.49c.58,1.54-.8,10-1.93,12.24,0-3.54-.35-8-1.67-9.95-3.46,2-4.52,2.21-8.29,4.46a38.43,38.43,0,0,0,4.31-5.38,83.52,83.52,0,0,0-12.12,1.4,48.23,48.23,0,0,1,12.64-4c-.76-1.05-6.92-4.39-8.45-5,4.88.38,10.84,2.2,13.73,4A22.61,22.61,0,0,1,50,9.66,5.85,5.85,0,0,1,47.4,12.49Z" />
+                            </svg>
+                        </a>
+                        <a href="http://www.fisheyelagence.com/"
+                            class="inline-block mr-[10px] ml-[100px] md:ml-[10px] maxcomd:mt-[30px] maxcomd:pl-[140px] maxmd:pl-[110px] maxxl:pl-[80px] partner-link partner-name-fisheye maxcomd:block">
+                            <svg class="w-[113px] md:w-[100px] fill-white hover:fill-[#A3D5BD] duration-500"
+                                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 80">
+                                <path
+                                    d="M64.37,54.53C67.16,65.86,110.43,71.4,106,41.37c-2.7-18.39-33-10-30.75-19.89,1.53-6.72,21.77-5.53,24.56,4.73a17,17,0,0,1,2.07-1.62c.77-.51,1.63-1,1.63-1C99.44,9.56,61.58,10,63.35,33.34,65.14,57,94.15,44.87,95,55c.58,6.59-21.83,7.84-26.47-3.82a8.52,8.52,0,0,1-2.11,2.14,11.15,11.15,0,0,1-2.08,1.25" />
+                                <path
+                                    d="M158.46,61.78v-34c0-11.05-16.25-19.66-27-5.35V.19a93.1,93.1,0,0,1-11.69.93c-5,0-9.8-.45-9.8-.45s.47,5.84.47,15.64v28c0,9-.47,17.55-.47,17.55h22l-.47-17.55v-16c1.21-3.87,6.5-5.86,6.5-.47v34Z" />
+                                <path
+                                    d="M180.83,39.55c.32-10.91,2.52-20.4,8.19-20.4,6,0,6.82,12.25,6.82,20.4Zm4.44-25.37c-13.28.49-22.8,9.7-22.8,25.31S174.54,63.38,188,63.38c8.42,0,16.34-3.77,19.13-11.85a13.07,13.07,0,0,1-2.57-.77,12.32,12.32,0,0,1-1.67-.86c-4.43,13.57-21.47,13.49-22.08-5.44h26.95c4.45-16.18-5.94-30.89-22.48-30.27" />
+                                <path
+                                    d="M272,39.55c.32-10.91,2.52-20.4,8.19-20.4,6,0,6.82,12.25,6.82,20.4Zm4.44-25.37c-13.28.49-22.8,9.7-22.8,25.31s12.08,23.88,25.53,23.88c8.42,0,16.35-3.77,19.13-11.85a13.09,13.09,0,0,1-2.57-.77,12.38,12.38,0,0,1-1.67-.86c-4.43,13.57-21.47,13.49-22.08-5.44H299c4.45-16.18-5.94-30.89-22.48-30.27" />
+                                <path
+                                    d="M237.46,54.85h0ZM238.78,67l13.91-41.82A91.76,91.76,0,0,1,256.86,15h-7.19c-1.12,5.79-5.63,17.16-9,28.42l-.3,1-12.74-29.6s-5,.37-10.66.37a96.58,96.58,0,0,1-10.67-.62l18.25,44.57c6.53-.45,9.84,3.26,9.93,5.43L234.08,66c-1,3.29-3,10.86-10.08,10.86-8.45,0-5.63-9.53-5.63-9.53a20.11,20.11,0,0,1-3.08-.81,7.17,7.17,0,0,1-2.09-1.1c-1.4,3.85-1.76,14.35,11.26,14.35,9.18,0,12.3-6.85,14.26-12.65h0l0-.14v0" />
+                                <path
+                                    d="M47,25.25c8.17,0,14.8-4.78,14.8-10.68C61.77-3.06,6.91-8.9,6.91,24.71v4.08H.47A40.19,40.19,0,0,1,0,34.55H6.91l0,9.51s.18,12.82-.47,17.55H28.92c-.57-4.85-.5-17.55-.5-17.55V34.56h8v9.51s.11,8.86-.3,17.55H58.82a156.25,156.25,0,0,1-.95-17.55V30.67c-32.48,7.14-38-16.5-24.73-24.75,1.46-.91,1.92-.72,2.28-.51.57.34.31,1.08-.34,2h0c-1.18,1.53-2.91,4.18-2.91,7.2,0,5.9,6.62,10.68,14.8,10.68" />
+                            </svg>
+                        </a>
+                        <a href="https://www.rencontres-arles.com/"
+                            class="inline-block ml-[80px] maxcomd:ml-0 maxcomd:mt-[30px] maxcomd:pl-[140px] maxmd:pl-[110px] maxxl:pl-[80px] partner-link partner-name-arles-les-rencontres-de-la-photographie maxcomd:block">
+                            <svg class="w-[140px] md:w-[120px] fill-white hover:fill-[#A3D5BD] duration-500"
+                                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 260 83">
+                                <path
+                                    d="M11.1.22,0,35.53v3.62H8.93l2.56-9.06H22l2.72,9.06H35L22.44.22ZM13.54,21.8l3-10.79h.22l3,10.79Z" />
+                                <polygon
+                                    points="108.97 39.15 139.4 39.15 139.4 30.86 118.54 30.86 118.54 23.41 129.72 23.41 129.72 15.18 118.54 15.18 118.54 8.51 139.4 8.51 139.4 0.22 108.97 0.22 108.97 39.15" />
+                                <polygon
+                                    points="89.01 0.22 79.44 0.22 79.44 39.15 105.25 39.15 105.25 30.86 89.01 30.86 89.01 0.22" />
+                                <path
+                                    d="M70.77,12.51C70.77,5.67,65.21.22,56.59.22H40.35V39.15h9.57V25.52h4.61l7.34,13.62H72.66l-9-15.57A11.53,11.53,0,0,0,70.77,12.51ZM55.31,17.07H49.91V8.51h5.39c3.89,0,5.5,1.56,5.5,4.23S59.2,17.07,55.31,17.07Z" />
+                                <path
+                                    d="M164.09,15.9l-4.56-2c-2.39-1.06-2.78-2.17-2.78-3.11,0-1.17,1.06-2.67,3.67-2.67A11.87,11.87,0,0,1,168.76,12L174,5.23a17.88,17.88,0,0,0-8.82-5h-9.93c-5.21,1.53-8.89,5.66-8.89,10.86,0,4.84,2.95,8.67,8.84,11.23l4.45,1.95c2.78,1.22,4.06,2.33,4.06,3.95s-1.33,3.06-4,3.06a14.64,14.64,0,0,1-9.62-4.17L145,34a21.7,21.7,0,0,0,14.9,5.84c9.34,0,14.24-6.06,14.24-12C174.1,22.52,171.42,19.13,164.09,15.9Z" />
+                                <path
+                                    d="M30.51,68.39H24.69V82.55h5.83c4.67,0,7.46-2.87,7.46-7.08S35.18,68.39,30.51,68.39Zm-.22,10.39H28.75V72.15h1.54a3.32,3.32,0,1,1,0,6.63Z" />
+                                <path
+                                    d="M75,68.39,70.73,82.55H75l.67-2.37h3.54L80,82.55h4.39L80.1,68.39Zm1.46,8.23.95-3.52h.08l.95,3.52Z" />
+                                <polygon
+                                    points="64.08 68.39 60.02 68.39 60.02 82.55 69.91 82.55 69.91 78.86 64.08 78.86 64.08 68.39" />
+                                <polygon
+                                    points="40.69 82.55 52.01 82.55 52.01 78.99 44.75 78.99 44.75 77.29 48.43 77.29 48.43 73.57 44.75 73.57 44.75 71.93 52.01 71.93 52.01 68.39 40.69 68.39 40.69 82.55" />
+                                <path
+                                    d="M172.94,72a2.85,2.85,0,0,1,2.83,2l4.61,0a7.2,7.2,0,0,0-7.48-5.88,7.32,7.32,0,0,0-7.6,7.32,7,7,0,0,0,7.12,7.32,5.77,5.77,0,0,0,4.75-2.23v2H180V74.82H172.7v2.89h3a3.5,3.5,0,0,1-2.77,1.35,3.57,3.57,0,0,1,0-7.12Z" />
+                                <path
+                                    d="M217.57,68.39h-5.36V82.55h4V78.6h1.32c3.72,0,5.6-2.41,5.6-5.18S221.29,68.39,217.57,68.39ZM217.09,75h-.83V71.93h.83c1.05,0,1.9.44,1.9,1.56S218.14,75,217.09,75Z" />
+                                <path
+                                    d="M200.65,68.39l-4.27,14.16h4.31l.67-2.37h3.54l.73,2.37H210l-4.27-14.16Zm1.46,8.23,1-3.52h.08l.95,3.52Z" />
+                                <polygon
+                                    points="233.67 73.57 229.3 73.57 229.3 68.39 225.24 68.39 225.24 82.55 229.3 82.55 229.3 77.29 233.67 77.29 233.67 82.55 237.73 82.55 237.73 68.39 233.67 68.39 233.67 73.57" />
+                                <polygon
+                                    points="260 71.93 260 68.39 248.67 68.39 248.67 82.55 260 82.55 260 78.99 252.74 78.99 252.74 77.29 256.42 77.29 256.42 73.57 252.74 73.57 252.74 71.93 260 71.93" />
+                                <rect x="241.17" y="68.39" width="4.06" height="14.16" />
+                                <path
+                                    d="M194.68,73.08c0-2.51-2-4.69-5.44-4.69h-6.53V82.55h4.06V77.83h1.31l2.53,4.71h4.55l-3.09-5.3A4.3,4.3,0,0,0,194.68,73.08Zm-5.8,1.31h-2.1V71.93h2.1c1.17,0,1.64.53,1.64,1.23S190.05,74.4,188.88,74.4Z" />
+                                <path
+                                    d="M127.12,68.15a7.32,7.32,0,1,0,7.46,7.32A7.25,7.25,0,0,0,127.12,68.15Zm0,10.84c-1.9,0-3.12-1.5-3.12-3.52S125.22,72,127.12,72s3.11,1.48,3.11,3.52S129,79,127.12,79Z" />
+                                <path
+                                    d="M96.42,68.39H91.06V82.55h4V78.6h1.32c3.72,0,5.6-2.41,5.6-5.18S100.14,68.39,96.42,68.39ZM95.94,75H95.1V71.93h.83c1.05,0,1.9.44,1.9,1.56S97,75,95.94,75Z" />
+                                <polygon
+                                    points="135.47 72.07 139.45 72.07 139.45 82.55 143.6 82.55 143.6 72.07 147.58 72.07 147.58 68.39 135.47 68.39 135.47 72.07" />
+                                <polygon
+                                    points="112.92 73.57 108.55 73.57 108.55 68.39 104.49 68.39 104.49 82.55 108.55 82.55 108.55 77.29 112.92 77.29 112.92 82.55 116.98 82.55 116.98 68.39 112.92 68.39 112.92 73.57" />
+                                <path
+                                    d="M155.93,68.15a7.32,7.32,0,1,0,7.46,7.32A7.25,7.25,0,0,0,155.93,68.15Zm0,10.84c-1.9,0-3.11-1.5-3.11-3.52S154,72,155.93,72,159,73.43,159,75.47,157.83,79,155.93,79Z" />
+                                <polygon
+                                    points="198.52 60.79 191.26 60.79 191.26 59.09 194.94 59.09 194.94 55.37 191.26 55.37 191.26 53.73 198.52 53.73 198.52 50.19 187.2 50.19 187.2 64.35 198.52 64.35 198.52 60.79" />
+                                <path
+                                    d="M135.85,64.59a7.32,7.32,0,1,0-7.46-7.32A7.25,7.25,0,0,0,135.85,64.59Zm0-10.84c1.9,0,3.11,1.48,3.11,3.52s-1.21,3.52-3.11,3.52-3.11-1.5-3.11-3.52S134,53.75,135.85,53.75Z" />
+                                <path
+                                    d="M119.74,64.59a7.27,7.27,0,0,0,7.34-5.92h-4.53a2.84,2.84,0,0,1-2.81,2.12c-1.9,0-3.12-1.5-3.12-3.52s1.21-3.52,3.12-3.52a2.91,2.91,0,0,1,2.79,2.08h4.55A7.11,7.11,0,0,0,119.74,50a7.32,7.32,0,1,0,0,14.64Z" />
+                                <polygon
+                                    points="149.2 57.07 152.78 64.35 157.67 64.35 157.67 50.19 153.65 50.19 153.65 57.49 150.09 50.19 145.18 50.19 145.18 64.35 149.2 64.35 149.2 57.07" />
+                                <polygon
+                                    points="163.31 64.35 167.46 64.35 167.46 53.87 171.44 53.87 171.44 50.19 159.33 50.19 159.33 53.87 163.31 53.87 163.31 64.35" />
+                                <polygon
+                                    points="101.54 57.07 105.11 64.35 110.01 64.35 110.01 50.19 105.98 50.19 105.98 57.49 102.42 50.19 97.51 50.19 97.51 64.35 101.54 64.35 101.54 57.07" />
+                                <path
+                                    d="M57.57,55.89l-2.32-.81c-.69-.24-.77-.62-.77-.85s.34-.73,1-.73a4.77,4.77,0,0,1,3.14,1.23l2.22-2.81a7.78,7.78,0,0,0-5.42-2c-3.36,0-5.36,2.08-5.36,4.35a4.34,4.34,0,0,0,3.24,4.17l2.06.71c1,.35,1.17.61,1.17,1s-.4.83-1.21.83a6.07,6.07,0,0,1-3.64-1.66l-2.26,3a8.71,8.71,0,0,0,6.09,2.24C58.68,64.59,61,62.77,61,60,61,58.14,59.8,56.66,57.57,55.89Z" />
+                                <path
+                                    d="M208.53,55.89l-2.32-.81c-.69-.24-.77-.62-.77-.85s.34-.73,1-.73a4.77,4.77,0,0,1,3.14,1.23l2.22-2.81a7.79,7.79,0,0,0-5.42-2c-3.36,0-5.36,2.08-5.36,4.35a4.33,4.33,0,0,0,3.23,4.17l2.06.71c1,.35,1.17.61,1.17,1s-.4.83-1.21.83a6.05,6.05,0,0,1-3.64-1.66l-2.27,3a8.72,8.72,0,0,0,6.09,2.24c3.15,0,5.44-1.82,5.44-4.57C211.93,58.14,210.76,56.66,208.53,55.89Z" />
+                                <path
+                                    d="M182.46,59a4.3,4.3,0,0,0,2.61-4.17c0-2.51-2-4.69-5.44-4.69H173.1V64.35h4.06V59.63h1.32L181,64.35h4.55Zm-3.2-2.85h-2.1V53.73h2.1c1.17,0,1.64.53,1.64,1.23S180.44,56.2,179.27,56.2Z" />
+                                <polygon
+                                    points="34.58 60.66 28.75 60.66 28.75 50.19 24.69 50.19 24.69 64.35 34.58 64.35 34.58 60.66" />
+                                <polygon
+                                    points="94.96 60.79 87.7 60.79 87.7 59.09 91.39 59.09 91.39 55.37 87.7 55.37 87.7 53.73 94.96 53.73 94.96 50.19 83.64 50.19 83.64 64.35 94.96 64.35 94.96 60.79" />
+                                <path
+                                    d="M72.8,59.63h1.32l2.53,4.71h4.55L78.1,59a4.3,4.3,0,0,0,2.61-4.17c0-2.51-2-4.69-5.44-4.69H68.73V64.35H72.8V59.63Zm0-5.9h2.1c1.17,0,1.64.53,1.64,1.23s-.47,1.23-1.64,1.23H72.8Z" />
+                                <polygon
+                                    points="47.56 60.79 40.3 60.79 40.3 59.09 43.98 59.09 43.98 55.37 40.3 55.37 40.3 53.73 47.56 53.73 47.56 50.19 36.24 50.19 36.24 64.35 47.56 64.35 47.56 60.79" />
+                                <rect x="221.44" y="0.24" width="38.56" height="9" />
+                            </svg>
+                        </a>
+                    </div>
+                    <div class="col-md-1">
+                        <span>
+                            <button class="bg-wite hover:bg-gren 2xl:ml-[-100px] xl:ml-[-200px] md:hidden"
+                                onclick="topFunction()" id="myBtn" title="Go to top"><i
+                                    class="fa-solid fa-arrow-up fa-2xl fttps"></i></button>
+                        </span>
                     </div>
                 </div>
             </div>
+        </div>
     </section>
 
 
@@ -983,7 +1168,7 @@
     <!-- data-aos -->
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
-      AOS.init();
+        AOS.init();
     </script>
     <!-- Custom Javascript  -->
     <script src="/assets/js/script.js"></script>
@@ -1172,11 +1357,25 @@
     </script>
     <!-- shrinkable slide to right -->
     <script>
-        document.addEventListener("DOMContentLoaded", function() {
-    const shrinkableDiv = document.getElementById("shrinkable");
-    shrinkableDiv.style.display = "block";
-});
+        document.addEventListener("DOMContentLoaded", function () {
+            const shrinkableDiv = document.getElementById("shrinkable");
+            shrinkableDiv.style.display = "block";
+        });
     </script>
+    <!-- navbar mobile  -->
+    <script>
+        const mobileMenuButton = document.querySelector("#user-menu-button"); // corrected ID
+        const mobileMenu = document.querySelector("#mobile-menu");
+
+        mobileMenuButton.addEventListener("click", function () {
+            const isExpanded = mobileMenuButton.getAttribute("aria-expanded") === "true";
+            mobileMenuButton.setAttribute("aria-expanded", !isExpanded);
+            mobileMenu.classList.toggle("hidden", isExpanded);
+        });
+    </script>
+
+
+
 
 </body>
 

@@ -67,3 +67,15 @@ window.addEventListener('scroll', function() {
       sidebar.classList.remove('hidden');
   }
 });
+
+
+// mobl show hide 
+
+function mobshow() {
+  var x = document.getElementById("dropdon");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
