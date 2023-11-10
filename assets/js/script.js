@@ -1,9 +1,5 @@
-
-
 // images slider 
-
 var owl = $('.owl-carousel');
-
 owl.owlCarousel({
   loop: true,
   margin: 10,
@@ -37,29 +33,21 @@ owl.owlCarousel({
 
   }
 });
-
 // Pause the carousel on mouseenter
 owl.on('mouseenter', function() {
   owl.trigger('stop.owl.autoplay');
 });
-
 // Resume the carousel on mouseleave
 owl.on('mouseleave', function() {
   owl.trigger('play.owl.autoplay');
 });
-
-
-
 // sidenav 
-
 window.addEventListener('scroll', function() {
   // Get the position of the .thatha element
   const thathaElement = document.querySelector('.thatha');
   const thathaPosition = thathaElement.getBoundingClientRect();
-  
   // Get the sidebar element
   const sidebar = document.querySelector('.sidenav');
-  
   // Add or remove the "hidden" class based on scroll position
   if (thathaPosition.top < window.innerHeight) {
       sidebar.classList.add('hidden');
@@ -67,10 +55,7 @@ window.addEventListener('scroll', function() {
       sidebar.classList.remove('hidden');
   }
 });
-
-
 // mobl show hide 
-
 function mobshow() {
   var x = document.getElementById("dropdon");
   if (x.style.display === "none") {

@@ -164,23 +164,13 @@ body {
     display: none;
   }
 
-
-  /* Add your existing styles here */
-
-/* Add your existing styles here */
-
-@keyframes moveLetters {
-  0% {
-      transform: translateY(0);
-  }
-  50% {
-      transform: translateY(-10px);
-  }
-  100% {
-      transform: translateY(0);
-  }
-}
-
-.animated-letter {
-  animation: moveLetters 1s ease infinite;
-}
+  /* letter up and down  */
+  .up,
+    .down {
+      position: absolute;
+      transition: transform 0.5s ease-out;
+    }
+    .letter {
+      display: inline-block;
+      /* margin: 0 5px; Adjust spacing between letters */
+    }
