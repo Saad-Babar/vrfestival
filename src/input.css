@@ -172,5 +172,16 @@ body {
     }
     .letter {
       display: inline-block;
-      /* margin: 0 5px; Adjust spacing between letters */
+      transition: transform 0.7s ease-out; /* Add smooth transition for a better effect */
     }
+
+
+
+    .cloud {
+      transition: transform 0.3s ease-out; /* Add smooth transition for a better effect */
+      -webkit-user-drag: none;
+        -khtml-user-drag: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+  }

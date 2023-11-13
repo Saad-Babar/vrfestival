@@ -6,7 +6,7 @@
   <style>
     body {
       margin: 0;
-      overflow: hidden;
+      /* overflow: hidden; */
       background-color: black;
     }
 
@@ -34,6 +34,14 @@
       this.size = size;
 
       this.draw = function () {
+        const gradient = ctx.createRadialGradient(
+          this.x, this.y, 0,
+          this.x, this.y, this.size
+        );
+
+        gradient.addColorStop(0, 'white');
+        gradient.addColorStop(1, '#A2C5A6');
+
         ctx.beginPath();
         ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2, false);
         ctx.arc(this.x + this.size * 0.7, this.y - this.size * 0.5, this.size, 0, Math.PI * 2, false);
@@ -41,19 +49,16 @@
         ctx.arc(this.x + this.size * 0.7, this.y + this.size * 0.5, this.size, 0, Math.PI * 2, false);
         ctx.closePath();
 
-        ctx.fillStyle = 'rgba(255, 255, 255, 0.8)';
+        ctx.fillStyle = gradient;
         ctx.fill();
       };
     }
 
     function createClouds() {
-      for (let i = 0; i < 5; i++) {
-        const x = Math.random() * canvas.width;
-        const y = Math.random() * canvas.height * 0.3;
-        const size = Math.random() * 50 + 30;
-
-        clouds.push(new Cloud(x, y, size));
-      }
+      // Manually set the coordinates for three clouds
+      clouds.push(new Cloud(canvas.width - 400, 150, 70)); // Top right
+      clouds.push(new Cloud(400, 100, 50)); // Top left
+      clouds.push(new Cloud(canvas.width / 2, canvas.height - 100, 50)); // Bottom center
     }
 
     function drawClouds() {
